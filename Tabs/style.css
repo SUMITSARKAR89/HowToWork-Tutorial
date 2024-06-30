@@ -39,11 +39,12 @@ button{
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: rgba(70, 63, 63, 0.986);
+    background-color: rgba(77, 8, 8, 0.986);
     color: #fff;
     padding: 5px 15px;
     font-size: 25px;
     border-radius:  20px;
+    transition: 0.3s;
     
 }
 .content{
@@ -90,5 +91,6 @@ p{
 }
 
 #btn1{
-    color: rgba(0, 255, 255, 0.486);
+    
+    
 }

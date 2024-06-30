@@ -44,22 +44,7 @@
 
     <script>
 
-        const acc =document.querySelectorAll(".accordion");
-
-        for(let i = 0; i< acc.length; i++){
-            acc[i].addEventListener("click", function(){
-                this.classList.toggle = ("on");
-
-                let card = this.nextElementSibling;
-                if(card.style.maxHeight){
-                    card.style.maxHeight = "";
-                }else{
-                    card.style.maxHeight = card.scrollHeight + "px";
-                }
-
-            });
-
-        };
+        
         /*keyword
         1. nextElementSibling
         2.toogle
@@ -68,7 +53,7 @@
         5. if else
         */
 
-        /*const accordion = document.getElementsByClassName("accordion");
+        const accordion = document.getElementsByClassName("accordion");
         
         let i;
         for(i = 0; i < accordion.length; i++){
@@ -82,7 +67,7 @@
                 }
             });
 
-        }*/
+        }
 
         // const acc = document.getElementsByClassName("accordion");
         // for(let i = 0; i < acc.length; i++){
