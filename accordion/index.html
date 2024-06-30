@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accordion (inspired by W3school.com)">
+    <meta name="keywords" content="icon, accordion">
+    <meta name="author" content="sumit sarkar">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon section  -->
+    <link rel="shortcut icon" href="https://workmatejob.com/images/avatars/avatar_901168716077495851.jpg" type="image/x-icon">
+    <!-- this is Css section  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- this is google font section  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+
+    <title>Accordion </title>
+</head>
+<body>
+
+     <h1>Accordion</h1>
+    <div class="container">
+        <button class="accordion"> Part one</button>
+    <div class="card">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis vel tempore nulla quidem doloribus! Esse velit aliquid labore ab iste.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur odit id dolore pariatur tenetur officiis inventore. Inventore commodi voluptatem officia eligendi reprehenderit voluptate similique pariatur iusto doloribus quaerat ullam ratione vero sequi rerum incidunt eius, id sunt minima assumenda dolorem. Nostrum cupiditate qui reiciendis unde vero laboriosam est odio.</p>
+    </div>
+
+    <button class="accordion"> Part two</button>
+    <div class="card">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis vel tempore nulla quidem doloribus! Esse velit aliquid labore ab iste.</p>
+    </div>
+
+    <button class="accordion"> Part three</button>
+    <div class="card">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis vel tempore nulla quidem doloribus! Esse velit aliquid labore ab iste.</p>
+    </div>
+    </div> 
+
+    <script>
+
+        const acc =document.querySelectorAll(".accordion");
+
+        for(let i = 0; i< acc.length; i++){
+            acc[i].addEventListener("click", function(){
+                this.classList.toggle = ("on");
+
+                let card = this.nextElementSibling;
+                if(card.style.maxHeight){
+                    card.style.maxHeight = "";
+                }else{
+                    card.style.maxHeight = card.scrollHeight + "px";
+                }
+
+            });
+
+        };
+        /*keyword
+        1. nextElementSibling
+        2.toogle
+        3. scrollHeight
+        4. loop
+        5. if else
+        */
+
+        /*const accordion = document.getElementsByClassName("accordion");
+        
+        let i;
+        for(i = 0; i < accordion.length; i++){
+            accordion[i].addEventListener("click", function(){
+                this.classList.toggle("on");
+                let card = this.nextElementSibling; //sibling element is = "p"//
+                if(card.style.maxHeight){
+                    card.style.maxHeight = null;
+                }else{
+                    card.style.maxHeight = card.scrollHeight + "px";
+                }
+            });
+
+        }*/
+
+        // const acc = document.getElementsByClassName("accordion");
+        // for(let i = 0; i < acc.length; i++){
+        //     acc[i].addEventListener("click", function(){
+        //         this.classList.toggle("on");
+ 
+        //         let card = this.nextElementSibling;
+        //         if(card.style.maxHeight){
+        //             card.style.maxHeight = null;
+        //         }else{
+        //             card.style.maxHeight = card.scrollHeight + "px";
+        //         }
+        //     })
+
+        // }
+    </script>
+
+    
+</body>
+</html>

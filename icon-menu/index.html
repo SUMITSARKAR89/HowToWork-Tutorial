@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="icon set on menu (inspired by W3school.com)">
+    <meta name="keywords" content="icon, nav">
+    <meta name="author" content="sumit sarkar">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon section  -->
+    <link rel="shortcut icon" href="https://workmatejob.com/images/avatars/avatar_901168716077495851.jpg" type="image/x-icon">
+    <!-- this is Css section  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- this is google font section  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+
+    <title>icon menu </title>
+</head>
+<body>
+    <!-- 1. horizontal icon
+    2. vertical icon
+    3. menu bar -->
+
+
+    <!-- this is icon bar horizontal  -->
+    <div class="icon-bar">
+        <a class="active" href="#"><i class="fa fa-home"></i></a> 
+        <a href="#"><i class="fa fa-search"></i></a> 
+        <a href="#"><i class="fa fa-envelope"></i></a> 
+        <a href="#"><i class="fa fa-globe"></i></a>
+        <a href="#"><i class="fa fa-trash"></i></a>
+        <!-- ------- this is menu var------- -->
+        <div class="container" onclick="myMenu(this)">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+          </div>
+    </div>
+       <!-- this is icon bar vertical  -->
+      <div class="icon-bar-col">
+        <a class="active" href="#"><i class="fa fa-home"></i></a> 
+        <a href="#"><i class="fa fa-search"></i></a> 
+        <a href="#"><i class="fa fa-envelope"></i></a> 
+        <a href="#"><i class="fa fa-globe"></i></a>
+        <a href="#"><i class="fa fa-trash"></i></a> 
+      </div>
+
+<script>
+function myMenu(a) {
+  a.classList.toggle("change");
+}
+</script>
+     
+    
+</body>
+</html>
