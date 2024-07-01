@@ -1,4 +1,4 @@
-## Accordion
+## 1.Accordion
 
 ```javaScript
 const accordion = document.getElementsByClassName("accordion");
@@ -20,7 +20,7 @@ const accordion = document.getElementsByClassName("accordion");
 
 ```
 
-## Tab 
+## 2.Tab 
 
 ```javaScript
 
@@ -67,7 +67,7 @@ const content1 =document.getElementById("content1");
         }
 ```
 
-## Tab Heading 
+## 3. Tab Heading 
 
 ```javaScript
 
@@ -86,4 +86,28 @@ function showpanel(a,b,c){
 }
 document.getElementById("default").click();
 
+```
+
+## 4. Menu Navigation Var
+
+```javaScript
+
+
+const menuBtn = document.querySelectorAll(".menu-btn");
+const nav = document.getElementById("nav");
+const open = document.querySelectorAll(".open");
+const close = document.querySelectorAll(".close");
+
+open[0].addEventListener("click", () =>{
+    nav.style.left = "0";
+    open[0].style.display = "none";
+    close[0].style.display = "block"
+})
+
+close[0].addEventListener("click", () =>{
+    nav.style.left = "-100%";
+     open[0].style.display = "block";
+    close[0].style.display = "none"
+
+})
 ```
