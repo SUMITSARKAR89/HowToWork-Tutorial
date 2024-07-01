@@ -31,31 +31,25 @@
             <button class="btn" onclick="showpanel('btn4', this, ' #FF5722')">Tab 4</button>
         </div>
 
+        <!-- if turn over in mouseover  -->
+        <!-- <div class="button-box">
+            <button class="btn" id="default" onmouseover="showpanel('btn2', this, ' #F44336')">Tab 1</button>
+            <button class="btn"  onmouseover="showpanel('btn2', this, '#04AA6D')">Tab 2</button>
+            <button class="btn"  onmouseover="showpanel('btn2', this, ''#2196F3')">Tab 3</button>
+            <button class="btn" onmouseover="showpanel('btn2', this, '#FF5722')">Tab 4</button>
+        </div> -->
+
         <div class="tabpanel" id="btn1" ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quia?</p></div>
         <div class="tabpanel" id="btn2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit qui corrupti quasi a beatae ea.</p></div>
         <div class="tabpanel" id="btn3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
         <div class="tabpanel" id="btn4"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, temporibus consequuntur! Pariatur vitae, perspiciatis illum, necessitatibus voluptate consequuntur blanditiis hic nam suscipit repellat amet debitis.</p></div>
     </div>
 
+    
 
-    <script>
-       
-        function showpanel(a,b,c){
-            const tabpanel = document.getElementsByClassName("tabpanel");
-            for(let i = 0; i< tabpanel.length; i++){
-                tabpanel[i].style.display = "none";
-            }
 
-            const btn = document.getElementsByClassName("btn");
-            for(let i = 0; i< btn.length; i++){
-                btn[i].style.backgroundColor = "";
-            }
-            document.getElementById(a).style.display = "block";
-            b.style.backgroundColor = c;
-        }
-        document.getElementById("default").click();
-    </script>
-    <!-- <script src="script.js"></script> -->
+    
+    <script src="script.js"></script> 
     
 </body>
 </html>

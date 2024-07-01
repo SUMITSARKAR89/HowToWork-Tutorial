@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+body{
+    font-family: "Manrope", sans-serif;
+    width: 100%;
+    margin:  0 auto;
+    height: auto;
+    
+}
+.container{
+    background-color: rgb(133, 126, 126);
+    width: 100%;
+    height: 15vh;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700;
+    color: aliceblue;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    padding: 5px;
+
+}
+nav a{
+    display: block;
+    cursor: pointer;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+a.active{
+    color: rgb(60, 202, 60);
+}
+
+.menu-icon a{
+    color: #fff;
+    display: block;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.mobile-nav{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+
+
+  @media(max-width:800px){
+    .menu-btn{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 350px;
+        height: 650px;
+        background-color: rgb(20, 16, 16);
+        transition: 0.5s;
+    }
+    .mobile-nav .mobile-logo{
+        display: block;
+        padding: 15px; 
+        color: #fff;
+        font-size: 25px;
+        width: 100%;
+        transition: 0.4s;
+    }
+     .mobile-nav ul li:hover{
+        background-color: rgb(65, 56, 56);
+    }
+    
+    .mobile-nav ul { 
+        width: 100%; 
+        margin-top: 50px; 
+    }
+    .mobile-nav ul li{ 
+       transition: 0.5s;
+        width: 100%;  
+    }
+    .mobile-nav ul li a{
+        display: block;
+        padding: 15px;
+        margin: 5px auto;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-icon .close{
+        display: none;
+    }
+  }
