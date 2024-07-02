@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="searsh (inspired by W3school.com)">
+    <meta name="keywords" content="search">
+    <meta name="author" content="sumit sarkar">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon section  -->
+    <link rel="shortcut icon" href="https://workmatejob.com/images/avatars/avatar_901168716077495851.jpg" type="image/x-icon">
+    <!-- this is Css section  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- this is google font section  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+
+    <title>Search filter </title>
+</head>
+<body>
+    <h2>search bar</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <div class="container">
+        <div class="row">
+            <div class="left-row">
+                <h3>menu bar</h3>
+                <input type="text" id="search" onkeyup="searchInput()" placeholder="search...">
+
+                <ul id="myMenu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">PYTHON</a></li>
+                    <li><a href="#">jQuery</a></li>
+                    <li><a href="#">TAILWIND</a></li>
+                    <li><a href="#">BOOSTRAP</a></li>
+                    <li><a href="#">NODE.JS</a></li>
+                    <li><a href="#">REACT</a></li>
+                    <li><a href="#">LARABEL</a></li>
+                    <li><a href="#">SQL</a></li>
+                    
+                </ul>
+
+            </div>
+            <div class="right-row">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo cupiditate quod laudantium expedita magni sapiente rem, ducimus minima quaerat? Inventore?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, sequi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos distinctio neque quasi porro esse! Eos eveniet praesentium aut porro atque a ab nihil odio. Dolorem facere quae quos consectetur molestiae!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="filter.js"></script> -->
+     <script>
+        function searchInput(){
+            const input = document.getElementById("search");
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            const filter = input.value.toUpperCase();
+            // console.log(input, ul, li);
+
+            for(let i = 0; i< li.length; i++){
+
+            }
+
+        }
+     </script>
+    
+</body>
+</html>
