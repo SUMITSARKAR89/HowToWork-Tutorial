@@ -152,16 +152,20 @@ close[0].addEventListener("click", () =>{
         }
 ```
 
-### overlay sidenav
+### overlay sidenav/ off-canvas menu
 
 ```javaScript
+
+// if change background color
         function closeNav(){
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("main").style.marginLeft = "0"; 
+            //  document.getElementById("main").style.backgroundColor = "bisque";
         }
         function openNav(){
             document.getElementById("mySidenav").style.width = "350px";
             document.getElementById("main").style.marginLeft = "350px"; 
+            //  document.getElementById("main").style.backgroundColor = "rgba(0,0,0,0.05)";
         }
 
 ```

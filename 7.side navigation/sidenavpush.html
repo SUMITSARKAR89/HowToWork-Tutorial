@@ -34,6 +34,7 @@
     width: 98%;
     margin:  0 auto;
     height: auto;
+    background-color: rgba(127, 255, 212, 0.281);
     
     }
     .sidenav-overlay{
@@ -41,7 +42,7 @@
         margin-top: 30px;
         width: 100%;
         height: 35vh;
-        padding: 25px;
+        
     }
     h1{
         text-align: center;
@@ -87,9 +88,12 @@
         text-transform: uppercase;
     }
     #main{
-        margin-left: 0;
+       
         transition: margin-left .5s;
         padding: 16px;
+    }
+    #main p{
+        margin-top: 30px;
     }
     </style>
 </head>
@@ -110,13 +114,20 @@
         </div>
     </div>
     <script>
+       
         function closeNav(){
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0"; 
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("main").style.opacity = "1" 
+            document.getElementById("main").style.backgroundColor = "bisque";
         }
+        
         function openNav(){
+            
             document.getElementById("mySidenav").style.width = "350px";
             document.getElementById("main").style.marginLeft = "350px"; 
+            document.getElementById("main").style.opacity = "0.7"
+            document.getElementById("main").style.backgroundColor = "rgba(0,0,0,0.05)";
         }
     </script>
      
