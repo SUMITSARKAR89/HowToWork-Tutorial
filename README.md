@@ -136,3 +136,32 @@ close[0].addEventListener("click", () =>{
 
         }
 ```
+
+
+## 5. Side nav overlay
+
+### open/close 
+
+```javaScript
+
+        function closeNav(){
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        function openNav(){
+            document.getElementById("mySidenav").style.width = "350px";
+        }
+```
+
+### overlay sidenav
+
+```javaScript
+        function closeNav(){
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0"; 
+        }
+        function openNav(){
+            document.getElementById("mySidenav").style.width = "350px";
+            document.getElementById("main").style.marginLeft = "350px"; 
+        }
+
+```
