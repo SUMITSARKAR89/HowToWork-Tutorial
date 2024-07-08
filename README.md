@@ -174,7 +174,7 @@ close[0].addEventListener("click", () =>{
 
 
 ```javaScript
-window.onscroll = function(){
+        window.onscroll = function(){
             scrollbarNavigation();
         }
         function scrollbarNavigation(){
@@ -186,6 +186,13 @@ window.onscroll = function(){
                 navbar.style.top = "-70px";
             }
         };
+
+        // to create shrink use this elements 
+           /* if(document.body.scrollTop > 50 || document.documentElement.scrollTop >50){
+                navbar.style.padding = "30px 10px";
+            }else{
+                navbar.style.padding = "60px 20px";
+            }*/
 
 ```
 
