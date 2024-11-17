@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: "Manrope", sans-serif;
+    width: 100%;
+    max-width: 100%;
+    margin:  0 auto;
+    height: auto;
+    
+}
+
+section{
+    margin: 5% 2%;
+}
+h2{
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+}
+
+/* ----------------Horizontal start here------------------  */
+#horizontal{
+    background-color: aquamarine;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+#horizontal h2{
+    margin-bottom: 5%;
+}
+
+.horizontal-icon-bar{
+    background-color: rgba(1, 2, 2, 0.89);
+    width: 8%;
+    padding: 5px;
+    border-radius: 10px;
+}
+.horizontal-icon-bar a{
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    /*  */
+}
+.horizontal-icon-bar a:hover,
+.vertical-icon-var a:hover{
+
+    background-color: #377d99e7;
+    color: #fff;
+    
+}
+.active{
+    background-color: rgb(0, 255, 0);
+   
+}
+/* ----------------Horizontal ends here------------------  */
+/* ----------------Vertical start here------------------  */
+#vertical{
+    background-color: aqua;
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0.5rem;
+   
+}
+.vertical-icon-var{
+    width: 100%;
+    background-color: rgb(4, 37, 26);
+    overflow: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.vertical-icon-var a{
+    float : right;
+    font-size: 2.5rem;
+    display: inline-block; 
+    margin: 10px 10px;
+    padding: 0 10px;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+    text-align: center;
+}
+.vertical-icon-var .active{
+    background-color: rgba(48, 48, 236, 0.911);
+}
+
+
+/* ----------------Vertical ends here------------------  */
+/* ----------------menu icon starthere------------------  */
+#menu-icon{
+    background-color: rgb(26, 102, 102);
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.menu-icon-bar{
+    max-width: 10%;
+    margin: 2%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.116);
+    padding: 5px;
+    transition: 0.5s;
+    border-radius: 3px;
+    display: inline-block;
+   
+}
+.menu-icon-bar:hover{
+    background-color: rgba(0, 0, 0, 0.836);
+}
+.menu-icon-bar .line{
+    width: 55px;
+    height: 5px;
+    background-color: azure;
+    margin: 8px 0;
+    transition: 0.5s;
+}
+.menu-icon-bar .line:hover{
+    background-color: blue;
+
+}
+
+/* -------------------------- */
+.change .bar1{
+    transform:  translate(0, 13px) rotate(-45deg);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform:  translate(0, -13px) rotate(45deg);
+}
+
+
+
+
+/* ----------------menu icon ends here------------------  */

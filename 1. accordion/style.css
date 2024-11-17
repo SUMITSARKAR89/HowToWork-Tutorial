@@ -14,12 +14,12 @@ body{
 
  .container{
     background-color: bisque;
-    width: 50%;
+    max-width: 50%;
     height: auto;
     margin:  0 auto;
     padding: 15px;
+    border-radius: 5px;
 }
-
 .accordion{
     width: 100%;
     margin: 5px 0;
@@ -35,9 +35,7 @@ body{
     content: '+';
     float: right;
     margin-right: 10px;
-}
-h1{
-    text-align: center;
+    font-size: 2rem;
 }
 .card{
     padding: 0 15px;
@@ -48,10 +46,20 @@ h1{
     overflow: hidden;
 }
 .card p{
-    
+    padding: 10px;
    font-size: 14px;
 }
+
+
+
+h1{
+    text-align: center;
+}
+
 .on::after{
     content: '-';
+   color: blue;
+   font-size: 2.4rem;
+
 
 }
