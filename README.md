@@ -138,7 +138,7 @@ close[0].addEventListener("click", () =>{
 ```
 
 
-## 5. Side nav overlay
+## 6. Side nav overlay
 
 ### open/close 
 
@@ -170,7 +170,7 @@ close[0].addEventListener("click", () =>{
 
 ```
 
-## 6. Hide top navbar scroll
+## 7. Hide top navbar scroll
 
 
 ```javaScript
