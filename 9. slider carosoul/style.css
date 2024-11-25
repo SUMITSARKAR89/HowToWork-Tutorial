@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body{
+    font-family: "Manrope", sans-serif;
+    max-width: 100%;
+    margin:  0 auto;
+    height: auto;
+    
+    
+}
+.carosoul{
+    max-width: 100%;
+    height: 80vh;
+    margin: 5% auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container{
+    max-width: 100%;
+  position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    
+    
+}
+.arrow{
+    height: 110px;
+    cursor: pointer;
+    width: 70px;
+    transition: 0.5s;
+
+}
+.arrow.left{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 1;
+    transition: 0.5s;
+    border-radius: 15%;
+    
+   
+    
+}
+.left:hover, .right:hover{
+    background-color: #200202c4;
+    
+}
+.arrow.right{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    transition: 0.5s;
+    border-radius: 15%;
+    z-index: 1;
+
+}
+.frame {
+    width: 680px;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+   
+}
+.slider{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition:all 1s ease;
+}
+.slider-image{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform:translate() ;
+}
