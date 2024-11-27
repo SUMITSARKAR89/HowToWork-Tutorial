@@ -28,11 +28,9 @@ header{
     align-items: flex-end;
     margin-bottom: 40px;
     width: 100%;
-
 }
 header .head{
-    max-width: 600px;
-    
+    max-width: 600px;  
 }
 .head .headline{
     font-size: 3rem;
@@ -42,12 +40,14 @@ header .head{
 }
 .head .title{
     color: rgba(95, 32, 110, 0.993);
-    font-size: 1.2rem;
-    
+    font-size: 1.2rem;   
 }
 .navigation{
     display: inline-block;
     gap: 5px;
+    background-color: #d6bd2e46;
+    padding: 10px;
+    border-radius: 20px 0 20px 0;
 }
 .navigation i{
     background-color: #0fb62b;
@@ -116,14 +116,33 @@ header .head{
 .slide-item:nth-child(9){
     left: calc((300px + 20px) * 7);
 }
+.slide-item:nth-child(10){
+    left: calc((300px + 20px) * 8);
+}
+.slide-item:nth-child(11){
+    left: calc((300px + 20px) * 9);
+}
+.slide-item:nth-child(12){
+    left: calc((300px + 20px) * 10);
+}
+.slide-item:nth-child(13){
+    left: calc((300px + 20px) * 11);
+}
+.slide-item:nth-child(14){
+    left: calc((300px + 20px) * 12);
+}
+.slide-item:nth-child(15){
+    left: calc((300px + 20px) * 13);
+}
+.slide-item:nth-child(16){
+    left: calc((300px + 20px) * 14);
+}
 .slide-item img{
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 10px;
-    
-    
-    
+    border-radius: 10px; 
+    align-items: center;  
 }
 
 .slide-overlay{
