@@ -75,5 +75,5 @@ function changeImage(a){
          counter = imageId;
         slideImage[counter].style.animation = "prev2 0.5s ease-in forwards ";
     }
-    dotIndecator();
+    dotIndecator();//this is for count dots
 }

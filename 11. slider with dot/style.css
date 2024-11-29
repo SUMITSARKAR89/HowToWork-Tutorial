@@ -76,7 +76,6 @@ span#next, span#prev{
     font-weight: 500;
     transition: 0.5s;
     border-radius: 3px;
-    
     cursor: pointer;
     z-index: 1;
 }
