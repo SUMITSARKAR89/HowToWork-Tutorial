@@ -9,7 +9,7 @@ const myLink = document.getElementById("my-link");
 const memuMobile = document.getElementById("menu-mobile");
 const mobileBody = document.getElementById("mobile-body");
 
-memuMobile.addEventListener("click", function(){
+memuMobile.addEventListener("mouseover", function(){
     if(myLink.style.display === "flex"){
         myLink.style.display = "none";
         mobileBody.style.marginTop = "0";

@@ -105,8 +105,6 @@ body{
     max-height: 600px;
     max-width: 400px;
     object-fit: cover;
-    
-    
 }
 .modal.active .modal-img,
 .modal.active .modal-text{

@@ -12,10 +12,10 @@ mainImages.forEach((image) =>{
     image.addEventListener('click', () =>{
         modalBody.classList.add("active");
           
-        //indevidual Title and individual photo
+        // //indevidual Title and individual photo
         modalImages.src = image.src;
         text.innerHTML = image.alt; 
-        //
+        
 
         close.addEventListener('click', () =>{
             modalBody.classList.remove("active");
