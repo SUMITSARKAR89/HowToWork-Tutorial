@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accordion (inspired by W3school.com)">
+    <meta name="keywords" content="Custom design Css only">
+    <meta name="author" content="sumit sarkar">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon section  -->
+    <link rel="shortcut icon" href="https://workmatejob.com/images/avatars/avatar_901168716077495851.jpg" type="image/x-icon">
+    <!-- this is Css section  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- this is google font section  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+
+    <title> Scroll Back To Top Button </title>
+   
+</head>
+<body>
+    <div class="container">
+        <section class="section1" >section one</section>
+        <section class="section2">section Two</section>
+        <section class="section3">section three</section>
+        <section class="section4">section four</section>
+        <section class="section5">section five</section>
+        <section class="section6">section six</section>
+        <section class="section7">section seven</section>
+
+    </div>
+    <a href="#" class="top-scroll" title="Scroll Back To Top Button ">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+    <script>
+        const topScroll = document.querySelector('.top-scroll');
+
+        // window.addEventListener('scroll', () => {
+        //     window.pageYOffset > 100 ? topScroll.classList.add("active") : topScroll.classList.remove('active')
+        // })
+
+        window.addEventListener('scroll', () => {
+            if(window.pageYOffset > 100){
+                topScroll.classList.add("active")
+            }else{
+                topScroll.classList.remove("active")
+            }
+        })
+    </script> 
+</body>
+</html>

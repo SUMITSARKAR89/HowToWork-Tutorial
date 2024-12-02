@@ -441,3 +441,52 @@ h2{
 
 /* ----------------image slides ends here------------------  */
 /* ----------------image overlays ends here------------------  */
+/* ----------------button start here------------------  */
+#button-hover{
+    max-width: 500px;
+    width: 100%;
+    background-color: #1c2629;
+    height: 20vh;
+    margin: 5% auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.move-btn{
+    align-items: center;
+    background-color: #099784;
+    color: #fff;
+    margin: 4% auto;
+    padding: 10px 25px;
+    border: 0;
+    outline: 0;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+.move-btn span{
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+
+}
+.move-btn span::after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.3s;
+    color: #000;
+    
+}
+.move-btn:hover span{
+    padding-right: 25px;
+}
+.move-btn:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+/* ----------------button ends here------------------  */
