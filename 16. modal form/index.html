@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accordion (inspired by W3school.com)">
+    <meta name="keywords" content="Custom design Css only">
+    <meta name="author" content="sumit sarkar">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon section  -->
+    <link rel="shortcut icon" href="https://workmatejob.com/images/avatars/avatar_901168716077495851.jpg" type="image/x-icon">
+    <!-- this is Css section  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- this is google font section  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+
+    <title> Create modal form </title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <div class="content-body">
+                <h2>Pop Up From</h2>
+                <h3>Click on the button at the <span style="color: red; font-size: 2.2rem;">Top</span> of this page to open the login form.</h3>
+            </div>
+        </div><!--content end-->
+        <button class="open-button" onclick="openForm()">Open Form</button>
+        
+        <div class="form-box" id="modal">
+            <span class="cross" onclick="closeForm()"><i class="fa-solid fa-xmark" style="color:rgb(193, 0, 252); font-size: 22px;"></i></span>
+            <h1 class="title">sign up form</h1>
+            <div class="underline"></div>
+
+            <form action="">
+
+                <div class="input-group">
+                    <div class="input-field namefield">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Enter Your Name "  required  class="input-value">    
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Your Email Address " required class="input-value">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" placeholder="Enter Password " required maxlength="6" minlength="4" class="input-value"> 
+                    </div>
+
+                    <p><span class="pass-text">Password Suggestion</span><a href="#"> click here</a></p>
+                </div>
+
+                <div class="buttons-group">
+                    <button type="submit" class="submit-btn"><span>Sign Up</span></button>
+                    <button type="button" class="signIn-btn disable">Sign In</button>
+                </div>
+
+            </form><!--form end-->
+        </div><!--form box-->
+
+    </div><!--end container-->
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
