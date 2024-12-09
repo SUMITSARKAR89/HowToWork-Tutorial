@@ -61,14 +61,11 @@ h1{
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
-    
+    transition: all 0.3s ease-in;
   }
   
   .column {
-
     display: none; /* Hidden by default */
-     /* Adjust width */
     margin: 5px;
     padding:5px 5px 0px;
     background-color: transparent;
@@ -77,10 +74,10 @@ h1{
     border-radius: 5px;
     
   }
-  
   .column.show {
     display: block; /* Show elements with the 'show' class */
   }
+  
   
   .btn {
     padding: 10px 15px;
@@ -93,9 +90,6 @@ h1{
     font-size: 1.2rem;
     transition: all 0.3s ease-in;
   }
-
-  
-  
   .btn.active , .btn:hover{
     background-color: #0056b3;
   }
@@ -165,11 +159,15 @@ h1{
 .modal.on .modal-text{
     animation: zoom 0.3s , linear;
 }
+
+
 @keyframes zoom{
     from{
         transform: scale(0);
+        
     }to{
         transform: scale(1);
+        
     }
 }
 

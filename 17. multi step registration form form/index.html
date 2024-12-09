@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accordion (inspired by W3school.com)">
+    <meta name="keywords" content="Custom design Css only">
+    <meta name="author" content="sumit sarkar">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon section  -->
+    <link rel="shortcut icon" href="https://workmatejob.com/images/avatars/avatar_901168716077495851.jpg" type="image/x-icon">
+    <!-- this is Css section  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- this is google font section  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+
+    <title>Multi Step Registration form  </title>
+   
+</head>
+<body>
+    <div id="page" class="page">
+        <div class="container">
+            <div class="form-box">
+
+                <!-- form left -->
+                <div class="progress">
+                    <div class="logo"><h1>Registration Form</h1></div><!--logo end-->
+
+                    <ul class="progress-list">
+                        <li class="step active">
+                            <span>1</span>
+                            <p>personal information <br><span class="light">25 sec to complete</span></p>
+                        </li><!--personal info end-->
+                        <li class="step ">
+                            <span>2</span>
+                            <p>contact information <br><span class="light">40 sec to complete</span></p>
+                        </li><!--contact info end-->
+                        <li class="step ">
+                            <span>3</span>
+                            <p>security information <br><span class="light">30 sec to complete</span></p>
+                        </li>
+                    </ul><!--security info end-->
+
+                </div><!--progress end-->
+
+                <!-- form-right -->
+                <form action="">
+                    <div class="form-one from-step active">
+                        <div class="bg-icon"><img src="img/user.png" alt="" width="60px"></div>
+                        <h2>personal infomation</h2>
+                        <p>Enter your personal information...</p>
+                        <div class="input-box">
+                            <label > first name</label>
+                            <input type="text" placeholder="e.g. John">
+                        </div> <!--input first name-->
+                        <div class="input-box">
+                            <label > last name</label>
+                            <input type="text" placeholder="e.g. paul">
+                        </div><!--input last name-->
+                        <div class="input-box birth">
+                            <label > date of birth</label>
+                            <div class="grouping">
+                                <input type="number" pattern="[0-9]*" name="day" value="" min="1" max="31" placeholder="DD">
+
+                                <input type="number" pattern="[0-9]*" name="month" value="" min="0" max="12" placeholder="MM">
+
+                                <input type="number" pattern="[0-9]*" name="year" value="" min="0" max="2055" placeholder="YYYY">
+
+                            </div>
+                        </div><!--input birth name-->
+                    </div> <!--form one end-->
+
+                    <div class="forn-two from-step">
+                        <div class="bg-icon"><img src="img/contacts.png" alt="" width="60px"></div>
+                        <h2>contact infomation</h2>
+                        <p>Enter your contact information...</p>
+                        <div class="input-box">
+                            <label > phone number</label>
+                            <input type="tel" placeholder="+880 xxx xxxx xxx">
+                        </div> <!--input phone number-->
+                        <div class="input-box">
+                            <label > address</label>
+                            <input type="text" placeholder="street address">
+                        </div> <!--input address-->
+                        <div class="input-box">
+                            <input type="text" placeholder="area address">
+                        </div> <!--input areea address-->
+                        <div class="input-box">
+                            <label > city name</label>
+                            <input type="text" placeholder="City">
+                        </div> <!--input city-->
+                        <div class="input-box">
+                            <label > state name</label>
+                            <input type="text" placeholder="State">
+                        </div> <!--input state name-->
+                        <div class="input-box">
+                            <label > Zip code</label>
+                            <input type="tel" placeholder="postal code">
+                        </div> <!--input zip code-->
+                        <div class="input-box">
+                            <label > country</label>
+                            <select name="country" id="country" >
+                                <option value="" default>Select One Country</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="India">India</option>
+                                <option value="Sri Lanka">Sri lanka</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Afganistan">Afganistan</option>
+                            </select>
+                        </div> <!--country name -->
+
+                    </div><!--form two end-->
+
+                    <div class="form-three from-step">
+                        <div class="bg-icon"><img src="img/shield.png" alt="" width="60px"></div>
+                        <h2>security infomation</h2>
+                        <p> your security information...</p>
+
+                        <div class="input-box">
+                            <label >email address</label>
+                            <input type="email" name="" id="" placeholder=" abc@email.com">
+
+                        </div> <!--email-->
+                        <div class="input-box">
+                            <label >user name</label>
+                            <input type="text" name="" id="" placeholder=" username">
+
+                        </div> <!--username-->
+                        <div class="input-box">
+                            <label >password</label>
+                            <input type="password" name="" id="" placeholder=" password">
+
+                        </div> <!--password-->
+                        <div class="input-box">
+                            <input type="password" name="" id="" placeholder=" confirm password">
+
+                        </div> <!--confirm password-->
+                        <div class="input-box checkbox" id="checkbox">
+                            <input type="checkbox">
+                            <label>i currectly fill up my information by given on FORM.</label>
+                        </div> <!--checkbox-->
+                       
+                    </div> <!--from three end-->
+
+                    <div class="btn-group">
+                        <button type="button" class="btn-prv" disabled>previous step</button>
+                        <button type="button" class="btn-nxt">next step</button>
+                        <button type="button" class="btn-submit">submit</button>
+
+                    </div><!--btn end here-->
+
+                </form><!--form end-->
+
+            </div><!--form box end-->
+
+        </div><!--container end-->
+    </div><!--page end-->
+    
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

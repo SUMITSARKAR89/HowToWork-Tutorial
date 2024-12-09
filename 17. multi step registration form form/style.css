@@ -1,0 +1,470 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Manrope", sans-serif;
+    width: 90%;
+    max-width: 100%;
+    margin:  0 auto;
+    height: 150vh;
+    transition: all 0.3s ease-in;
+    background-color: #f3f3f3;
+    background-image: url(img/—Pngtree—cartoon\ hand\ drawn\ green\ landscape_1143121.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#page{
+    border: 1px solid #5AC182;
+    margin: 5% auto;
+    border-radius: 10px;
+    max-width: 90%;
+    backdrop-filter: blur(5px);
+}
+.container{
+    padding: 10px;
+    width: 100%;
+    margin: 5px 2px;
+}
+.form-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+   
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.404);
+}
+.progress{
+    background-color: #f8faec91;
+    padding: 4% 2%;
+    border-radius: 8px 0 0 8px;
+    position: relative;
+    width: 40%;
+    border-right: 3px solid rgb(154, 231, 138);
+    border-right-style: dotted;
+}
+
+.progress .logo h1{
+    margin-bottom: 2%;
+    text-align: center;
+    max-width: 100%;
+    padding: 8px 0;
+    color: #15ac65;
+    text-transform: capitalize;
+    position: relative;
+    transform: scale(1);
+    transition: 0.3s ease-in;
+}
+.progress .logo h1:hover{
+    transform: scale(1.02);
+}
+/* .progress .logo h1::after{
+    content: '';
+    position: absolute;
+    opacity: 1;
+    right: 12%;
+    bottom: 0;
+    width: 37px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: rgb(4, 247, 105);
+} */
+.progress .progress-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    margin: 80px 0;
+
+}
+.progress-list .step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    margin: 5px;
+}
+
+.progress-list .step > span{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    background-color: #867e7eb2;
+    color: #0a00009c;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+.progress-list .step.active > span{
+    background-color: rgb(8, 223, 133); 
+    color: #fff;
+}
+.progress-list .step p{
+    line-height: 30px;
+    color: rgb(8, 92, 19);
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.progress-list .step p>span{
+    color: #e99292;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.progress-list li.step:not(:last-child)::before{
+    content: '';
+    position: absolute;
+    left: 8%;
+    top: 83%;
+    width: 3px;
+    height: 70px;
+    background-color: rgba(57, 61, 58, 0.233);
+
+}
+
+/* ===================form =================== */
+form{
+    width: 60%;
+    max-width: 100%;
+    padding: 4% 2%;
+    border-radius: 0px 8px  8px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+form > div{
+    padding: 4% 3%;
+    border: 1px solid rgba(13, 177, 114, 0.233);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+form > div:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 5px rgba(22, 170, 29, 0.514);
+}
+/* hr{
+    border: none;
+    border-bottom: 2px solid rgb(248, 246, 246);
+    
+    
+} */
+form > div h2{
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0496f8;
+    transition: 0.1s;
+    border-bottom: 1px solid #68f855;
+
+}
+form > div h2:hover{
+    border-bottom: 2px solid rgb(15, 183, 235);
+    
+}
+form > div p{
+    color: #0227166e;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+form div.bg-icon{
+    margin-bottom: 3%;
+}
+form .bg-icon img{
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 3px;
+    border: 1px solid rgb(8, 230, 56);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+form .bg-icon img:hover{
+   
+    border: 2px solid #0496f8;
+
+}
+form > div .input-box:not(.checkbox){
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    margin: 25px 0;
+}
+form :where(input, select){
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border: 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #e0e7ec;
+    width: 95%;
+    transition: 0.3s;
+}
+form input::placeholder{
+    color: rgb(187, 176, 176);
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+form input:hover{
+    border-bottom:1px solid rgb(100, 214, 100) ;
+}
+form label{
+    font-size: 1.2rem;
+    color:#094618d7;
+    font-weight: 600;
+}
+form .form-one .birth .grouping input{
+    width: 15%;
+    text-align: center;   
+}
+form #checkbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+form #checkbox label{
+    width: 95%;
+    max-width: 100%;
+    margin-bottom: -8px;
+    padding: 5px;
+}
+form #checkbox input{
+    width: 5%;
+    max-width: 100%;
+    height: auto;
+}
+form .input-box select option{
+    text-transform: capitalize;
+    color: green;
+}
+form .input-box #country {
+    
+    max-width: 100%;
+    width: 250px;
+    padding: 15px;
+    text-align: left;
+
+}
+
+/* ================================================ */
+.btn-group{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 5%;
+}
+
+form > div:not(.btn-group) {
+    display: none;
+    animation: fadeIn 0.6s ease-in-out;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+form > div.active{
+    display: block;
+}
+.btn-group button{
+    padding: 12px 25px;
+    border: 0;
+    outline: 0;
+    border: 1px solid #fff;
+    background-color: #1eafb9;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+.btn-group button:disabled{
+    background-color: #adafb1;
+    border-color: #e0e7ec;
+    cursor: text;
+}
+button:hover{
+    border: 1px solid #0496f8;
+    background-color: #11a862;
+}
+
+.btn-group  .btn-submit,
+.form-three.active ~ .btn-group .btn-nxt
+ {
+    display: none;
+}
+.form-three.active ~ .btn-group .btn-submit{
+    display: block;
+}
+
+
+@media (max-width:1080px) {
+ 
+    body{
+        width: 100%;
+        height: 100vh;   
+    }
+    #page{ 
+        margin: 5% auto;
+        max-width: 95%;    
+    }
+    .progress{
+        padding: 6% 1%;
+    }
+    form #checkbox label{
+       font-size: 14px;
+       font-weight: 800;
+    }
+    
+      
+}
+@media (max-width:870px){
+    .progress .progress-list .step p{
+        font-size: 17px;
+    }
+    .progress .progress-list .step p > span{
+        font-size: 13px;
+    }
+    
+    .progress-list .step > span{
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    .progress .progress-list{
+        gap: 20px;
+        margin: 50px 0;
+    }
+    .progress-list li.step:not(:last-child)::before{
+        top: 78%;
+        height: 58px;
+    }
+    form > div h2{
+       
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    form label{
+        font-size: 1.1rem;
+        
+        font-weight: 500;
+    }
+    form .form-one .birth .grouping input::placeholder{
+        font-size: 0;
+        text-align: left;
+    }
+    form .form-one .birth .grouping input{
+        width: 25%;
+    }
+    .btn-group{
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+}
+@media (max-width:740px){
+    .form-box{
+        flex-direction: column;
+    }
+    .progress{
+        width: 100%;
+        border-bottom: 1px dotted #15ac65 ;
+        border-right: none;
+        padding: 5% 0 0 0;
+    }
+    .progress .progress-list{
+        flex-direction: row;
+        gap: 10px;
+        margin: 30px 0;
+    }
+    .progress-list .step{
+        flex-direction: column;
+        text-align: center;
+    }
+    .progress-list li.step:not(:last-child)::before{
+        display: none;
+    }
+    .progress-list .step p>span{
+        display: none;
+    }
+    form{
+        width: 100%; 
+        padding: 2%;
+    }
+    form > div h2{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        text-align: center;
+    }
+    form div .bg-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .progress .logo h1::after{
+        content: '';
+        position: absolute;
+        opacity: 1;
+        left: 50%;
+        bottom: -2%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 4px;
+        border-radius: 10px;
+        background-color: rgb(4, 247, 105);
+    } 
+    .btn-group{
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+        margin: 0% 1% 3%;
+    }
+    .btn-group button{
+        padding: 12px 30px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+       
+}

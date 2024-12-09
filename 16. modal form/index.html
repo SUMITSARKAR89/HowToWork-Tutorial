@@ -28,21 +28,35 @@
             <div class="content-body">
                 <h2>Pop Up From</h2>
                 <h3>Click on the button at the <span style="color: red; font-size: 2.2rem;">Top</span> of this page to open the login form.</h3>
+                <h3>Content Agenda</h3>
+                <ol>
+                    <pre>
+                        1. open form btn.
+                        2. form content
+                        3. sign up btn & sign in btn
+                        4. generate underline and title change
+                        5. name is hidden when click sign in btn
+                        6. closed form with cross icon action 
+                        7. show sign in Text 
+                    </pre>
+                </ol>
             </div>
         </div><!--content end-->
         <button class="open-button" onclick="openForm()">Open Form</button>
         
         <div class="form-box" id="modal">
-            <span class="cross" onclick="closeForm()"><i class="fa-solid fa-xmark" style="color:rgb(193, 0, 252); font-size: 22px;"></i></span>
+            
+            <span class="cross" title="CLOSE BUTTON" onclick="closeForm()"><i class="fa-solid fa-xmark" style="color:rgb(193, 0, 252); font-size: 22px;"></i></span>
             <h1 class="title">sign up form</h1>
             <div class="underline"></div>
 
-            <form action="">
+            <form action="">                                                                                                              
+                <p id="checked" style="display: none;"> You are on Sign in Table</p>
 
                 <div class="input-group">
                     <div class="input-field namefield">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Enter Your Name "  required  class="input-value">    
+                        <input type="text" placeholder="Enter Your Name " value=""  required  class="input-value">    
                     </div>
 
                     <div class="input-field">

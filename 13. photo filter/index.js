@@ -1,5 +1,5 @@
 const btnContainer = document.getElementById("myBtnContainer");
-const buttons = btnContainer.querySelectorAll(".btn");
+const buttons = document.querySelectorAll(".btn");
 const columns = document.querySelectorAll(".column");
 
 const mainImage = document.querySelectorAll(".grid img");
@@ -16,8 +16,10 @@ const text = document.querySelector(".modal-text");
   columns.forEach((a) => {
     if (category === "all" || a.classList.contains(category)) {
       a.classList.add("show");
+      
     } else {
       a.classList.remove("show");
+      
     }
   });
 }
@@ -33,10 +35,11 @@ buttons.forEach((btn) => {
     buttons.forEach((i) => i.classList.remove("active"));
     // Add 'active' class to the clicked button
     btn.classList.add("active");
+    
   });
 });
 
-// modal image
+// // modal image
 mainImage.forEach((image) => {
   image.addEventListener('click', () =>{
     modal.classList.add("on");
