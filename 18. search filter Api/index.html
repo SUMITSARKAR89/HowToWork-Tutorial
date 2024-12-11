@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accordion (inspired by W3school.com)">
+    <meta name="keywords" content="Custom design Css only">
+    <meta name="author" content="sumit sarkar">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon section  -->
+    <link rel="shortcut icon" href="https://workmatejob.com/images/avatars/avatar_901168716077495851.jpg" type="image/x-icon">
+    <!-- this is Css section  -->
+    
+    <!-- this is google font section  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+
+    <title>Search filter API  </title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Manrope", sans-serif;
+    width: 90%;
+    max-width: 100%;
+    margin:  5% auto;
+    height: auto;
+    transition: all 0.3s ease-in;
+    background-color: #d8d1d1ab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://plus.unsplash.com/premium_photo-1670793629729-27b99a178377?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   
+    
+}
+.container{
+    background-color: transparent;
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 255, 0.562);
+    margin: 2%;
+    backdrop-filter: blur(35px);
+
+}
+.search-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    border: 1px solid rgb(98, 98, 155);
+    background-color: rgb(255, 255, 255);
+    height: 480px;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+label{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: blueviolet;
+    margin-top: 20px;
+}
+.input-box{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.input-box input{
+    position: relative;
+    width: 60%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border: 1px solid rgb(228, 217, 217);
+    outline: 0;
+    border-radius: 10px;
+    padding-left: 30px;
+    font-size: 16px;
+    transition: 0.5s;
+    
+}
+.input-box:hover i{
+    display: none;
+    
+}
+.input-box i{
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.644);
+    transition: 0.5s;
+
+}
+::placeholder{
+    font-size: 16px;
+}
+input:hover{
+    background-color: rgb(250, 236, 236);
+    border-bottom: 1px solid #e66a6aab;
+    width: 90%;
+}
+
+.user-cards{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+     
+}
+
+.card{
+    max-width: 100%;
+    border: 1px solid rgb(221, 184, 184);
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin: 5px auto;
+    width: 100%;
+}
+.header{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.body{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #554e4e;
+}
+.phone{
+    font-size: 0.9rem;
+}
+
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <label for="">Search here</label>
+            <div class="input-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search..." search-user>
+            </div>
+            <div class="user-cards" user-cards></div>
+        
+            <template user-templete >
+                <div class="card">
+                    <div class="header" data-header></div>
+                    <div class="body" data-body> </div>
+                    <div class="phone" data-phone> </div>
+                </div>
+            </template>
+
+            
+        </div>
+
+    </div>
+
+    <script>
+        
+
+        const userTemplete = document.querySelector('[user-templete]');
+        const userCards =document.querySelector('[user-cards]')
+        const inputSearch =document.querySelector('[search-user]')
+
+        let result = []
+        inputSearch.addEventListener('input', e => {
+            const value = e.target.value.toLowerCase()
+
+            result.forEach(user => {
+                const visible = 
+                user.name.toLowerCase().includes(value) ||
+                user.email.toLowerCase().includes(value)
+                user.element.classList.toggle('hide', !visible) 
+            }); 
+        })
+
+
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(data => {
+       result = data.map( user =>{
+        const card = userTemplete.content.cloneNode(true).children[0];
+        const header = card.querySelector('[data-header]')
+        const body = card.querySelector('[data-body]')
+        const phone = card.querySelector('[data-phone]')
+        header.textContent = user.name
+        body.textContent = user.email
+        phone.textContent = user.phone
+        
+        userCards.append(card)
+        return {
+            name: user.name,
+            email: user.email,
+            phone: user.phone,
+            element: card
+        }
+       })
+        
+      })
+
+    </script>
+</body>
+</html>

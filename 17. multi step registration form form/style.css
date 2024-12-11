@@ -17,7 +17,7 @@ body{
     height: 150vh;
     transition: all 0.3s ease-in;
     background-color: #f3f3f3;
-    background-image: url(img/—Pngtree—cartoon\ hand\ drawn\ green\ landscape_1143121.jpg);
+    background-image: url(https://th.bing.com/th/id/R.a707f04abbdcf93b9dcc4916a5d3059c?rik=NkuiHgolcPRfag&pid=ImgRaw&r=0);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@ body{
     gap: 35px;
    
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.404);
+    background-color: rgba(255, 255, 255, 0.925);
 }
 .progress{
     background-color: #f8faec91;
@@ -155,16 +155,17 @@ form{
     flex-direction: column;
     gap: 30px;
     
+    
 }
 
 form > div{
     padding: 4% 3%;
-    border: 1px solid rgba(13, 177, 114, 0.233);
+    border: 1px solid rgba(13, 177, 114, 0.479);
     border-radius: 10px;
     transition: 0.3s;
 }
 form > div:hover {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 5px rgba(22, 170, 29, 0.514);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 5 px rgba(22, 170, 29, 0.514);
 }
 /* hr{
     border: none;
