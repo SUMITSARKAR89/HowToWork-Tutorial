@@ -16,6 +16,8 @@ function searchOn() {
         }
     );
 };
+
+//modal 
 const mainImages = document.querySelectorAll(".product-card img");
 const modalBody = document.querySelector(".modal");
 const modalImages = document.querySelector(".modal-img");

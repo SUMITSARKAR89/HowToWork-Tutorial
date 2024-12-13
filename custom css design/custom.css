@@ -259,7 +259,7 @@ h2{
     max-width: 100%;
     margin: 2% auto;
     width: 95%;
-    background-color: rgba(12, 117, 49, 0.144);
+    background-color: rgba(173, 223, 190, 0.493);
     height: auto;
 }
 .overlayers, 
@@ -352,7 +352,7 @@ h2{
 
 /* ----------------image slides start here------------------  */
 #image-slide{ 
-    background-color: rgba(0, 110, 255, 0.404);
+    background-color: rgba(77, 140, 223, 0.404);
 }
 /*number 1*/
 .overlay{
@@ -557,3 +557,430 @@ h2{
   
 
 /* ----------------button ends here------------------  */
+/* ----------------video background start here------------------  */
+#video-background{
+    width: 100%;
+    margin: 0 auto;
+    height: 60vh;
+    position: relative;
+}
+#video {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    margin: 5% auto;
+    height: 600px;
+  }
+  .video-content{
+    position: absolute;
+  bottom: -67%;
+  left: 14.4%;
+  background: rgba(53, 5, 5, 0.432);
+  color: #f1f1f1;
+  max-width: 71.4%;
+  width: 100%;
+  height:100%;
+  padding: 20px;
+  margin: 0 auto;
+  }
+  .video-content .video-heading{
+    display: block;
+    width: 30%;
+    text-align: center;
+    padding: 10px 12px;
+    background-color: #000000b9;
+    text-transform: capitalize;
+    border-radius: 3px;
+    margin-top: 2%;
+  }
+  .video-content p{
+    margin: 3% 2%;
+    font-size: 22px;
+    max-width: 700px;
+    text-align: left;
+  }
+  .video-btn{
+    padding: 15px 25px;
+    width: 200px;
+    display: block;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    margin-left: 15px;
+    border-radius: 8px;
+    color: #000;
+    background-color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .video-btn:hover{
+    color: #fff;
+    background-color: #000;
+  }
+  
+/* --------------video background ends here------------------  */
+/* --------------video modal box starts here------------------  */
+#modal-box{
+    background-color: rgb(247, 245, 245);
+    margin-top: 20%;
+    max-width: 100%;
+    height: 60vh;
+    padding: 2%;
+    position: relative;
+}
+#modal-box h3{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 800;
+}
+#modal-box .modal-btn{
+    border: 1px solid transparent;
+    outline: 0;
+    padding: 15px 25px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 3% auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #099784;
+    color: #fff;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+#modal-box .modal-btn:hover{
+    background-color: #fff;
+    color: #099784;
+    border: 1px solid #099784;
+}
+#modal-box #modal-dlt{
+    background-color: #f44336;
+}
+#modal-box #modal-dlt:hover{
+    color: rgb(2, 15, 0);
+    background-color: #099784;
+}
+
+#modal-box .modal-box-body{
+    display: none;
+    position: absolute;
+    background-color: rgb(243, 238, 238);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 70%;
+    max-width: 100%;
+    height: 40%;
+    bottom:23%;
+    left: 0;
+    margin: 2% 4%;
+    padding: 15px;
+    z-index: 1;
+    transition: 0.5s;
+    border-radius: 5px;
+
+}
+#modal-box .modal-box-body .modal-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+    position: relative;
+    padding: 15px;
+    transition: 0.3s;
+
+}
+#modal-box .modal-box-body:hover{
+    box-shadow: rgba(19, 91, 168, 0.486) 0px 20px 30px -25px;
+
+}
+.modal-content #mark-cencel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.2s;
+}
+#mark-cencel:hover, #mark-cencel-dlt:hover{
+    color: #1c2629;
+}
+#modal-box .modal-content p{
+    width: 80%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    transition: 0.3s;
+    
+}
+#modal-box .modal-box-dlt{
+    display: none;
+    position: absolute;
+    background-color: rgb(243, 238, 238);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 70%;
+    max-width: 100%;
+    height: 83%;
+    bottom:0%;
+    left: 0;
+    margin: 2% 1%;
+    padding:20px 25px;
+    z-index: 1;
+    transition: 0.5s;
+    border-radius: 5px;
+    text-align: center;
+
+}
+#mark-cencel-dlt{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+    color: #008CBA;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.modal-dlt-content{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    
+}
+.modal-dlt-content h3{
+    font-weight: 800;
+    margin-top: 2%;
+}
+.modal-dlt-content p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.modal-dlt-content .btn-group{
+    max-width: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.modal-dlt-content .btn-group button{
+    padding: 15px 30px;
+    width: 45%;
+    border: none;
+    outline: 0;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgba(224, 149, 149, 0.616);
+    background-color: #9E9E9E;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+}
+.btn-group #sub-btn{
+    background-color: #f44336;
+    transition: 0.3s;
+
+}
+.btn-group #sub-btn:hover{
+    background-color: #dd2619;
+
+}
+
+.slider-range{
+    max-width: 80%;
+    
+}
+
+
+/* --------------video modal box ends here------------------  */
+/* -------------scroll indicator start here------------------  */
+#upload-bar{
+    background-color: #fff;
+    width: 80%;
+    max-width: 100%;
+    height: 35vh;
+    margin: 5% auto;
+    padding: 2px 5px;
+
+}
+.upload-container{
+    height: 20px;
+    width: 99%;
+    max-width: 100%;
+    margin: 5px auto;
+    background-color: rgb(175, 165, 165);
+    position: relative;
+    border-radius: 5px;
+    display: block;
+}
+.upload-container .progress-bar{
+    position: absolute;
+    height: 100%;
+    background-color: rgb(21, 255, 0);
+    width: 1px;
+    margin-left: 1px;
+    border-radius: 5px;
+    
+
+}
+.play-animation{
+    animation: progress-anim 5s forwards;
+
+}
+.p-on{
+    float:right;
+    margin-right: 15px;
+    font-size: 20px;
+}
+@keyframes progress-anim {
+    0%{ width: 0%;}
+    100%{width: 100%;}
+    
+}
+.upload-content{
+    padding: 10px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color:;
+
+}
+.upload-content label{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.upload-content input{
+    padding: 10px;
+    max-width:100%;
+    width: 20%;
+   cursor: pointer;
+    height: 55px;
+    border: 1px solid rgba(223, 116, 116, 0.575);
+    border-radius: 10px;
+
+}
+.upload-content #progress-btn{
+    display: block;
+    max-width: 200px;
+    padding: 12px 20px;
+    text-transform: capitalize;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #099784;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+#progress-btn:hover{
+    background-color: #087e6e;
+
+}
+/* --------------scroll indicator ends here------------------  */
+/* --------------skill bar start here------------------  */
+#skill-bar{
+    width: 50%;
+    max-width: 100%;
+    margin: 5% auto;
+    height: 45vh;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+ .skill-container .skill-content{
+   margin: 20px ;
+   max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.skill-content .skill-name{
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.skill-content .skill-box{
+    position: absolute;
+    width: 97%;
+    height: 25px;
+    background-color: rgb(212, 176, 176);
+    top: 33px;
+    left: 5px;
+    border-radius: 8px;
+
+    
+} 
+.skill-box .html-skill{
+    width: 0%;
+    height: 25px;
+    border-radius: 8px;
+    background-color: rgb(25, 189, 167);
+    animation:  html 4s forwards;
+}
+.skill-box .css-skill{
+    width: 0%;
+    height: 25px;
+    border-radius: 8px;
+    background-color: rgb(197, 136, 23);
+    animation:  css 4s forwards;
+}
+.skill-box .js-skill{
+    width: 0%;
+    height: 25px;
+    border-radius: 8px;
+    background-color: rgb(208, 230, 12);
+    animation:  js 4s forwards;
+}
+.skill-box .rt-skill{
+    width: 0%;
+    height: 25px;
+    border-radius: 8px;
+    background-color: rgb(33, 54, 172);
+    animation:  rt 4s forwards;
+}
+.skill-box .percentage{
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    font-size: 18px;
+    font-weight: 800;
+    
+}
+@keyframes html {
+    to{ width: 96%;}   
+}
+@keyframes css {
+    to{ width: 85%;}   
+}
+@keyframes js {
+    to{ width: 65%;}   
+}
+@keyframes rt {
+    to{ width: 47%;}   
+}
+
+/* --------------skill bar ends here------------------  */
