@@ -111,6 +111,21 @@
                         <div class="desc">Add a description of the image here</div>
                       </div>
                 </div> 
+                <div class="overlay-four">
+                    <div class="flip-card">
+                        <div class="flip-card-front">
+                            <img src="img/1 (1).jfif" alt="" width="600"  class="overlay-image">
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-content">
+                                <h3 style="font-size: 30px;">hello.. this is picture</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi vitae soluta eum provident asperiores! Inventore!</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div> 
             </div>
     </section>
     <!-- ----=================================================================---- -->
@@ -176,6 +191,7 @@
 
         <button type="button" id="modal-btn" class="modal-btn" title="click here">open modal</button>
         <button type="button" id="modal-dlt" class="modal-btn" title="Delete Button">delete</button>
+        <button type="button" id="toast-btn" class="modal-btn" title="toast-btn">show snackbar</button>
         <div class="modal-box-body">
             <div class="modal-content">
                 <span id="mark-cencel"><i class="fa-solid fa-xmark"></i></span>
@@ -195,9 +211,34 @@
             </div>
 
         </div>
-       <div class="slider-range">
-       
-       </div>
+
+        <div class="snackbar">
+            <div class="toast-content">
+                <i class="fa-solid fa-check" id="toast-check"></i>
+                <div class="toast-box">
+                    <span class="toast-title">Success!</span>
+                    <span class="toast-text">Your change has been saved.</span>
+                </div>
+                <i class="fa-solid fa-xmark" id="toast-cencel"></i>
+            </div>
+        </div>
+
+        <div class="hover-over" style="border: 1px solid rgb(204, 162, 162)">
+            <div class="myDIV">Hover over me.</div>
+        <div class="hide">I am shown when someone hovers over the div above.</div>
+        </div>
+
+        <div class="alert-box">
+            <div class="alert">
+                <span class="closebtn">&times;</span>  
+                <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+              </div>
+              
+              <div class="alert success">
+                <span class="closebtn">&times;</span>  
+                <strong>Success!</strong> Indicates a successful or positive action.
+              </div>
+        </div>
     </section>
     <!-- ----=================================================================---- -->
       
@@ -253,7 +294,15 @@
 
      </section>
 
+     <!-- ----=================================================================---- -->
+      <section id="blend-mode">
+        <div class="blend-image-container">
+            <div class="blend-text">NATURE</div>
+        </div>
+      </section>
+
     <script src="custom.js"></script>
+    
     
 </body>
 </html>

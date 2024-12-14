@@ -81,6 +81,31 @@ modalSubBtn.addEventListener('click', () => {
     modalBox.style.backgroundColor = '#ffffff'
 });
 
+const toastBtn = document.querySelector('#toast-btn');
+const toastContent = document.querySelector('.toast-content');
+const toastClose = document.querySelector('#toast-cencel');
+
+toastBtn.addEventListener('click', () => {
+    toastContent.classList.add('toast-on');
+    setTimeout(() => {
+        toastContent.classList.remove('toast-on')
+    }, 2600);
+});
+toastClose.addEventListener('click', () => {
+    toastContent.classList.remove('toast-on');
+});
+//=========================alert box=============================
+
+const close = document.getElementsByClassName("closebtn");
+
+for (let i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var a = this.parentElement;
+    a.style.opacity = "0";
+    setTimeout(() => { a.style.display = "none"; }, 600);
+  }
+}
+
 // ===========================progress bar============================
 const upload = () => {
     const progressBar = document.querySelector('.progress-bar');
