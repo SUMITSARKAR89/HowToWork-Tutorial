@@ -123,6 +123,47 @@ const upload = () => {
         progressBar.classList.remove('play-animation');
     });
 }
+
+// ========================fullscreen=======================
+const fullImag = document.querySelector('.full-img');
+const fullBtn = document .querySelector('#fullscreen-btn');
+const full = document.documentElement;
+//click btn to active fullscreen
+fullBtn.addEventListener('click', () => {
+   if(full.requestFullscreen){
+    full.requestFullscreen()
+   }
+});
+ // click to deactive fullscreen
+window.addEventListener('click', () => {
+    if(document.exitFullscreen){
+        document.exitFullscreen()
+    }
+});
+// click img to active fullscreen mode image
+fullImag.addEventListener('click', () =>{
+    if(fullImag.requestFullscreen){
+        fullImag.requestFullscreen();
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const progressBtn = document.querySelector('#progress-btn');
     // progressBtn.addEventListener('click', () => {
     //     progressBar.style.display = 'block';
