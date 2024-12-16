@@ -1,6 +1,58 @@
+const h1 = document.querySelector('body h1');
+
+h1.addEventListener('mouseover', () => {
+    if(h1.innerHTML = " Hello. Welcome to custom design" ){
+        h1.innerHTML = "Scroll down";
+        h1.style.backgroundColor = "green";
+        h1.style.color = "#fff";
+    }else{
+        h1.innerHTML = " Hello. Welcome to custom design" 
+    }
+
+})
+// ==================================
+/*window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      document.body.style.backgroundColor = "#8cdde7ec"; // Change background after scrolling 100px
+    } else {
+      document.body.style.backgroundColor = ""; // Revert when scrolling back up
+    }
+  });*/
+
+//==================================
 function menu(x){
     x.classList.toggle("change");
 };
+//==================================
+
+var toggler = document.getElementsByClassName("tree");
+
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active-t");
+    this.classList.toggle("tree-down");
+  });
+}
+
+
+
+//==================================
+
+
+const body = document.querySelector('body');
+const dark = document.querySelector('#dark');
+
+const h = document.querySelector('#horizontal');
+const v = document.querySelector('#vertical');
+const m_i = document.querySelector('#menu-icon');
+const v_m_n = document.querySelector('#vertical-mobile-navbar');
+const i_o = document.querySelector('#image-overlay');
+
+dark.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
 
 
 // ==============================================
@@ -104,7 +156,14 @@ for (let i = 0; i < close.length; i++) {
     a.style.opacity = "0";
     setTimeout(() => { a.style.display = "none"; }, 600);
   }
-}
+};
+
+/*for(let i = 0; i< close.length; i++){
+    close[i].addEventListener('click', () => {
+        this.parentElement.style.display = "none"
+        
+    });
+}*/
 
 // ===========================progress bar============================
 const upload = () => {
@@ -125,6 +184,7 @@ const upload = () => {
 }
 
 // ========================fullscreen=======================
+
 const fullImag = document.querySelector('.full-img');
 const fullBtn = document .querySelector('#fullscreen-btn');
 const full = document.documentElement;
@@ -146,6 +206,36 @@ fullImag.addEventListener('click', () =>{
         fullImag.requestFullscreen();
     }
 });
+
+
+// ========================type writes=============
+
+const textWrite = document.querySelector("#type-write");
+const dataText = textWrite.getAttribute('data-text');
+
+
+let count = 0;
+
+window.onload = () =>{
+    setText();
+};
+
+const setText = () =>{
+    setTimeout ( () => {
+        textWrite.textContent += dataText.charAt(count);
+        count ++;
+        if(count <= dataText.length){
+            setText();
+        }
+
+    },50);
+    
+};
+
+
+
+
+
 
 
 
