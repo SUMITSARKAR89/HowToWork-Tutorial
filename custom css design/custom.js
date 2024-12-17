@@ -89,6 +89,8 @@ function videoBtn(){
         playBtn.style.color = '#fff';
     }
 };
+// =======================================================
+
 
 // =======================================================
 const modalBody = document.querySelector(".modal-box-body");
@@ -160,7 +162,7 @@ for (let i = 0; i < close.length; i++) {
 
 /*for(let i = 0; i< close.length; i++){
     close[i].addEventListener('click', () => {
-        this.parentElement.style.display = "none"
+        this.parentElement.style.display = "none";
         
     });
 }*/
@@ -232,8 +234,24 @@ const setText = () =>{
     
 };
 
+// ==========================media quary===============================
+/*function changBackgroundColor(a) {
+    if (a.matches) { 
+      document.body.style.backgroundColor = "yellow";
+    } else {
+     document.body.style.backgroundColor = "pink";
+    }
+  };
+  
+  var a = window.matchMedia("(max-width: 700px)");
+  
+  changBackgroundColor(a);
+  
+  a.addEventListener("change", () => {
+    changBackgroundColor(a)
+  });*/
 
-
+ 
 
 
 

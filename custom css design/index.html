@@ -30,6 +30,7 @@
         </p>
 
     </section>
+    <!-- ========================================================== -->
     <section id="horizontal">
         <h2>1. Icon bar (Horizontal)</h2>
         <i class="fa-solid fa-circle-half-stroke" id="dark" title="dark mode available"></i>
@@ -42,6 +43,7 @@
             <a href="#"><i class="fa fa-globe"></i></a>
             <a href="#"><i class="fa fa-trash"></i></a>
             </div>
+
             <ul id="nested-dropdown">
                 <li><span class="tree">semister summary</span>
                   <ul class="nested">
@@ -65,7 +67,15 @@
                             <ul class="nested">
                               <li class="nested-list">january</li>
                               <li class="nested-list">february</li>
-                              <li class="nested-list">march</li>
+                              <li ><span class="tree">March</span>
+                                <ul class="nested">
+                                    <li class="nested-list">1 day</li>
+                                    <li class="nested-list">7 days</li>
+                                    <li class="nested-list">15 days</li>
+                                    <li class="nested-list">30 days</li>
+                                </ul>
+                            
+                            </li>
                               <li class="nested-list">april</li>
                             </ul>
                           </li>
@@ -102,7 +112,7 @@
 
                   </ul>
                 </li>
-              </ul>
+            </ul>
               
        </div>
     </section> 
@@ -265,10 +275,14 @@
      <!-- ----=================================================================---- -->
     <section id="modal-box">
         <h3>modal box</h3>
+        <button onclick="listView()"><i class="fa fa-bars"></i> List</button>
+        <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
 
-        <button type="button" id="modal-btn" class="modal-btn" title="click here">open modal</button>
-        <button type="button" id="modal-dlt" class="modal-btn" title="Delete Button">delete</button>
-        <button type="button" id="toast-btn" class="modal-btn" title="toast-btn">show snackbar</button>
+        <div id="modal-row">
+            <button type="button" id="modal-btn " class="modal-btn" title="click here">open modal</button>
+            <button type="button" id="modal-dlt " class="modal-btn" title="Delete Button">delete</button>
+            <button type="button" id="toast-btn " class="modal-btn" title="toast-btn">show snackbar</button>
+        </div>
         <div class="modal-box-body">
             <div class="modal-content">
                 <span id="mark-cencel"><i class="fa-solid fa-xmark"></i></span>
