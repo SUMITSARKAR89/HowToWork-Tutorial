@@ -652,5 +652,22 @@ function searchOn() {
 
 ```
 
+## 17.email
+
+<img src="100.image/email.png" alt="" >
+
+
+```html
+
+ <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7babca68-faee-4353-abb0-596ef90e2ffd">
+            
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+           
+
+        </form>
+```
+
+
 
   
