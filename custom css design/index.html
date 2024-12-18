@@ -23,7 +23,7 @@
 </head>
 <body >
     <h1>hello. welcome to custom design</h1>
-    <section id="typewrites">
+     <section id="typewrites">
         
         <p id="type-write" data-text=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quisquam quia possimus sint velit veniam quo nostrum suscipit nemo dolores blanditiis voluptates fugit sed, repellendus neque, aspernatur nobis. Fuga a vero, et earum sint sed. Similique esse commodi amet laboriosam quasi, asperiores saepe maxime ducimus, hic doloremque cupiditate autem voluptate.">
            
@@ -31,7 +31,7 @@
 
     </section>
     <!-- ========================================================== -->
-    <section id="horizontal">
+     <section id="horizontal">
         <h2>1. Icon bar (Horizontal)</h2>
         <i class="fa-solid fa-circle-half-stroke" id="dark" title="dark mode available"></i>
        <div class="horizontal-container">
@@ -115,9 +115,9 @@
             </ul>
               
        </div>
-    </section> 
+    </section>  
     <!-- ========================================================== -->
-    <section id="vertical">
+     <section id="vertical">
         <h2>2. Icon bar (Vertical)</h2>
         <div class="vertical-icon-var">
             <a class="active" href="#"><i class="fa fa-home"></i></a>
@@ -130,7 +130,7 @@
     </section>
 
     <!-- ========================================================== -->
-    <section id="menu-icon"> 
+     <section id="menu-icon"> 
         <h2>3. Create menu icon </h2>
        
         <div class="menu-icon-bar" onclick="menu(this)">
@@ -141,10 +141,10 @@
         </div>
         <p style="color: blue; margin-left: 10px;">click here</p>
 
-    </section>
+    </section> 
 
     <!-- ----=================================================================---- -->
-    <section id="vertical-mobile-navbar">
+     <section id="vertical-mobile-navbar">
         <div class="mobile-container">
             <div class="topnav">
                 <a href="#" class="mylink-logo" >logo</a>
@@ -167,9 +167,9 @@
     </section>
 
     <!-- ----=================================================================---- -->
-    <section id="image-overlay">
+     <section id="image-overlay">
             <div class="overlayers">
-                <!-- to hide picture and show text  -->
+                
                 <div class="overlay-one">
                     <img src="img/1 (2).jfif" alt="image one" class="overlay-image">
                     <div class="overlay-content">
@@ -177,7 +177,7 @@
                     </div>
                 </div>
 
-                <!-- to opacity the both picture and text  -->
+                
                  <div class="overlay-two">
                     <img src="img/1 (6).jfif" alt="image one" class="overlay-image two">
                     <div class="overlay-content">
@@ -185,7 +185,7 @@
                     </div>
                 </div> 
 
-                <!-- to open picture in another target page  -->
+                
                  <div class="overlay-three">
                     <div class="gallery">
                         <a target="_blank" href="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="click here to open on new TAB"  >
@@ -210,9 +210,9 @@
                     </div>
                 </div> 
             </div>
-    </section>
+    </section> 
     <!-- ----=================================================================---- -->
-
+ 
     <section id="image-slide">
         <div class="images-slide-container">
             <div class="image-slide-top">
@@ -246,7 +246,7 @@
     </section>
 
      <!-- ----=================================================================---- -->
-    <section id="button-hover">
+     <section id="button-hover">
         <button class="move-btn"><span>move</span></button>
 
         <input id="search" type="text" name="search" placeholder="search..">
@@ -261,7 +261,7 @@
     </section>
      <!-- ----=================================================================---- -->
 
-    <section id="video-background">
+     <section id="video-background">
         <video muted loop autoplay id="video" >
             <source src="https://media.istockphoto.com/id/1412872141/video/family-with-two-children-walks-among-tall-fescue-grass-at-golden-hour.mp4?s=mp4-640x640-is&k=20&c=wzbKfncVDdp3uVf9BEQ_tsW0xJh-Q2P8T51GdU0GvkE=" type="video/mp4">
         </video>
@@ -273,16 +273,84 @@
 
     </section>
      <!-- ----=================================================================---- -->
-    <section id="modal-box">
-        <h3>modal box</h3>
-        <button onclick="listView()"><i class="fa fa-bars"></i> List</button>
-        <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+    
+    <!-- ----=================================================================---- -->
+       
+    <section id="upload-bar">
+        <div class="upload-container">
+            <div class="progress-bar"></div>
+            
+        </div>
+        <span class="p-on"></span>
+        <div class="upload-content">
+        <label for="">upload photo</label>
+        <input type="file" title="please upload photo" required placeholder="upload photo">
+        <button type="button" id="progress-btn" onclick="upload()">upload</button>
 
-        <div id="modal-row">
-            <button type="button" id="modal-btn " class="modal-btn" title="click here">open modal</button>
+        </div>
+    </section>
+
+    <!-- ----=================================================================---- -->
+     <section id="skill-bar">
+        <div class="skill-container">
+            <div class="skill-content">
+                <h4 class="skill-name">HTML</h4>
+                <div class="skill-box">
+                    <div class="html-skill"></div>
+                    <div class="percentage">95%</div>
+                </div>
+            </div>
+
+            <div class="skill-content">
+                <h4 class="skill-name">CSS</h4>
+                <div class="skill-box">
+                    <div class="css-skill"></div>
+                    <div class="percentage">85%</div>
+                </div>
+            </div>
+
+            <div class="skill-content">
+                <h4 class="skill-name">JavaScript</h4>
+                <div class="skill-box">
+                    <div class="js-skill"></div>
+                    <div class="percentage">65%</div>
+                </div>
+            </div>
+
+            <div class="skill-content">
+                <h4 class="skill-name">React</h4>
+                <div class="skill-box">
+                    <div class="rt-skill"></div>
+                    <div class="percentage">45%</div>
+                </div>
+            </div>
+        </div>
+
+    </section> 
+
+    <!-- ----=================================================================---- -->
+     <section id="blend-mode">
+        <div class="blend-image-container">
+            <div class="blend-text">NATURE</div>
+        </div>
+        <div class="fullscreen">
+            <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="" width="500px" class="full-img">
+            <button type="button" id="fullscreen-btn">fullscreen mode</button>
+        </div>
+    </section>
+    <!-- ----=================================================================---- -->
+
+      <section>
+        <div class="cursor outer"></div>
+     <div class="cursor inner"></div>
+   
+     </section>
+
+     <!-- <section id="modal-box">
+        <h3>modal box</h3>
+            <button type="button" id="modal-btn" class="modal-btn" title="click here">open modal</button>
             <button type="button" id="modal-dlt " class="modal-btn" title="Delete Button">delete</button>
             <button type="button" id="toast-btn " class="modal-btn" title="toast-btn">show snackbar</button>
-        </div>
         <div class="modal-box-body">
             <div class="modal-content">
                 <span id="mark-cencel"><i class="fa-solid fa-xmark"></i></span>
@@ -330,77 +398,242 @@
                 <strong>Success!</strong> Indicates a successful or positive action.
               </div>
         </div>
-    </section>
-    <!-- ----=================================================================---- -->
-      
-    <section id="upload-bar">
-        <div class="upload-container">
-            <div class="progress-bar"></div>
-            
-        </div>
-        <span class="p-on"></span>
-        <div class="upload-content">
-        <label for="">upload photo</label>
-        <input type="file" title="please upload photo" required placeholder="upload photo">
-        <button type="button" id="progress-btn" onclick="upload()">upload</button>
+    </section> -->
 
-        </div>
-    </section>
+       <script>
 
-    <!-- ----=================================================================---- -->
-    <section id="skill-bar">
-        <div class="skill-container">
-            <div class="skill-content">
-                <h4 class="skill-name">HTML</h4>
-                <div class="skill-box">
-                    <div class="html-skill"></div>
-                    <div class="percentage">95%</div>
-                </div>
-            </div>
 
-            <div class="skill-content">
-                <h4 class="skill-name">CSS</h4>
-                <div class="skill-box">
-                    <div class="css-skill"></div>
-                    <div class="percentage">85%</div>
-                </div>
-            </div>
+        // =======================================================
 
-            <div class="skill-content">
-                <h4 class="skill-name">JavaScript</h4>
-                <div class="skill-box">
-                    <div class="js-skill"></div>
-                    <div class="percentage">65%</div>
-                </div>
-            </div>
 
-            <div class="skill-content">
-                <h4 class="skill-name">React</h4>
-                <div class="skill-box">
-                    <div class="rt-skill"></div>
-                    <div class="percentage">45%</div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- ----=================================================================---- -->
-    <section id="blend-mode">
-        <div class="blend-image-container">
-            <div class="blend-text">NATURE</div>
-        </div>
-        <div class="fullscreen">
-            <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="" width="500px" class="full-img">
-            <button type="button" id="fullscreen-btn">fullscreen mode</button>
-        </div>
-    </section>
-    <!-- ----=================================================================---- -->
-   
+     </script>  
 
      
 
     <script src="custom.js"></script>
+      <!-- <script>
+        //=====================h1 title tag=======================
+        const h1 = document.querySelector('body h1');
+
+        h1.addEventListener('mouseover', () => {
+        if(h1.innerHTML = " Hello. Welcome to custom design" ){
+            h1.innerHTML = "Scroll down";
+            h1.style.backgroundColor = "green";
+            h1.style.color = "#fff";
+        }else{
+            h1.innerHTML = " Hello. Welcome to custom design" 
+        }
+
+        });
+
+        // ===================== menu toggle =====================
+            function menu(x){
+                x.classList.toggle("change");
+            };
+
+        // ===================== dropdown toggle =====================
+            const toggler = document.getElementsByClassName("tree");
+
+                var i;
+                for (i = 0; i < toggler.length; i++) {
+                toggler[i].addEventListener("click", function() {
+                    this.parentElement.querySelector(".nested").classList.toggle("active-t");
+                    this.classList.toggle("tree-down");
+                });
+                };
+
+        // ========================type writes=============
+
+                const textWrite = document.querySelector("#type-write");
+                const dataText = textWrite.getAttribute('data-text');
+                let count = 0;
+
+                window.onload = () =>{
+                    setText();
+                };
+
+                const setText = () =>{
+                    setTimeout ( () => {
+                        textWrite.textContent += dataText.charAt(count);
+                        count ++;
+                        if(count <= dataText.length){
+                            setText();
+                        }
+
+                    },50);
+                    
+                };
+
+        // ==========================cursor===============================
+            const cursorPointer = document.querySelector(".cursor");
+
+            window.addEventListener('mousemove', (e) => {
+
+                let x = e.pageX;
+                let y = e.pageY;
+
+                cursorPointer.style.left = `${x}px`;
+                cursorPointer.style.top = `${y}px`;
+
+
+            });
+        // ==========================cursor===============================
+                        const modalBody = document.querySelector(".modal-box-body");
+            const modalBtn= document.querySelector("#modal-btn");
+            const markCencel = document.querySelector("#mark-cencel");
+            const modalBox = document.querySelector("#modal-box");
+
+            modalBtn.addEventListener('click', () => {
+                modalBody.style.display = "block";
+                
+            });
+            markCencel.addEventListener("click", () => {
+                modalBody.style.display = "none";
+                modalBox.style.backgroundColor = '#fff'
+            });
+
+            const modalDltBox = document.querySelector('.modal-box-dlt');
+            const markDltCencel = document.querySelector('#mark-cencel-dlt');
+            const markDltBtn = document.querySelector('#modal-dlt');
+
+            const modalResetBtn = document.querySelector("#reset-btn");
+            const modalSubBtn = document.querySelector("#sub-btn");
+
+            markDltBtn.addEventListener('click', () => {
+                modalDltBox.style.display = "block";
+                modalBox.style.backgroundColor = '#ffffff91'
+            });
+            markDltCencel.addEventListener('click', () => {
+                modalDltBox.style.display = "none";
+                modalBox.style.backgroundColor = '#ffffff'
+            });
+
+
+            modalResetBtn.addEventListener('click', () => {
+                modalDltBox.style.display = "none";
+                modalBox.style.backgroundColor = '#ffffff'
+            });
+
+            modalSubBtn.addEventListener('click', () => {
+                alert('Account Delete');
+                modalDltBox.style.display = "none";
+                modalBox.style.backgroundColor = '#ffffff'
+            });
+
+            const toastBtn = document.querySelector('#toast-btn');
+            const toastContent = document.querySelector('.toast-content');
+            const toastClose = document.querySelector('#toast-cencel');
+
+            toastBtn.addEventListener('click', () => {
+                toastContent.classList.add('toast-on');
+                setTimeout(() => {
+                    toastContent.classList.remove('toast-on')
+                }, 2600);
+            });
+            toastClose.addEventListener('click', () => {
+                toastContent.classList.remove('toast-on');
+            });
+        //================== dark mode ================
+
+            const body = document.querySelector('body');
+            const dark = document.querySelector('#dark');
+
+            dark.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+            });
+
+
+        // ====================== menu mouse over========================
+
+            const myLink = document.getElementById("my-link");
+            const memuMobile = document.getElementById("menu-mobile");
+            const mobileBody = document.getElementById("mobile-body");
+
+            memuMobile.addEventListener("mouseover", function(){
+                if(myLink.style.display === "flex"){
+                    myLink.style.display = "none";
+                    mobileBody.style.marginTop = "0";
+                }else{
+                    myLink.style.display = "flex";
+                    mobileBody.style.marginTop = "140px";
+                };
+            });
+     
+        // ===========================video btn============================
+
+            function videoBtn(){
+                const playBtn = document.querySelector('.video-btn');
+                const myVideo = document.querySelector('#video');
+
+                if(myVideo.paused){
+                    myVideo.play();
+                    playBtn.innerHTML = "Pause";
+                    playBtn.style.backgroundColor = '#fff';
+                    playBtn.style.color = '#000';
+                }else{
+                    myVideo.pause();
+                    playBtn.innerHTML = "Play"
+                    playBtn.style.backgroundColor = 'green';
+                    playBtn.style.color = '#fff';
+                }
+            };
+    
+        // ===========================progress bar============================
+            const upload = () => {
+                const progressBar = document.querySelector('.progress-bar');
+                const uploadContainer = document.querySelector('.upload-container');
+                const on = document.querySelector('.p-on');
+
+                progressBar.classList.add('play-animation');
+                // uploadContainer.style.display = 'block';
+                    
+                on.innerHTML = "Uploaded your photo";
+                
+                on.addEventListener('click', () => {
+                    on.innerHTML = '';
+                    // uploadContainer.style.display = 'none';
+                    progressBar.classList.remove('play-animation');
+                });
+            };
+    
+        // ========================fullscreen=======================
+
+            const fullImag = document.querySelector('.full-img');
+            const fullBtn = document .querySelector('#fullscreen-btn');
+            const full = document.documentElement;
+            //click btn to active fullscreen
+            fullBtn.addEventListener('click', () => {
+            if(full.requestFullscreen){
+                full.requestFullscreen()
+            }
+            });
+            // click to deactive fullscreen
+            window.addEventListener('click', () => {
+                if(document.exitFullscreen){
+                    document.exitFullscreen()
+                }
+            });
+            // click img to active fullscreen mode image
+            fullImag.addEventListener('click', () =>{
+                if(fullImag.requestFullscreen){
+                    fullImag.requestFullscreen();
+                }
+            });
+    
+        //=========================alert box=============================
+
+                const close = document.getElementsByClassName("closebtn");
+
+                for (let i = 0; i < close.length; i++) {
+                close[i].onclick = function(){
+                    var a = this.parentElement;
+                    a.style.opacity = "0";
+                    setTimeout(() => { a.style.display = "none"; }, 600);
+                }
+                };
+    </script>   -->
+
+
     
     
 </body>

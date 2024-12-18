@@ -1392,3 +1392,19 @@ position: absolute;
     font-size: 36px;
   }
 
+  /* ================================================ */
+   .cursor{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+   }
+   .outer{
+    border: 1px solid #e2dee4;
+    background-color: #ac1ee4c5;
+   }
+
+   
+

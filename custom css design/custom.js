@@ -9,7 +9,22 @@ h1.addEventListener('mouseover', () => {
         h1.innerHTML = " Hello. Welcome to custom design" 
     }
 
-})
+});
+
+ // ==========================cursor===============================
+ const cursorPointer = document.querySelector(".cursor");
+
+ window.addEventListener('mousemove', (e) => {
+ 
+     let x = e.pageX;
+     let y = e.pageY;
+ 
+     cursorPointer.style.left = `${x}px`;
+     cursorPointer.style.top = `${y}px`;
+ 
+ 
+ });
+
 // ==================================
 /*window.addEventListener("scroll", () => {
     if (window.scrollY > 100) {
@@ -38,24 +53,18 @@ for (i = 0; i < toggler.length; i++) {
 
 
 
-//==================================
+//================== dark mode ================
 
 
 const body = document.querySelector('body');
 const dark = document.querySelector('#dark');
-
-const h = document.querySelector('#horizontal');
-const v = document.querySelector('#vertical');
-const m_i = document.querySelector('#menu-icon');
-const v_m_n = document.querySelector('#vertical-mobile-navbar');
-const i_o = document.querySelector('#image-overlay');
 
 dark.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
 });
 
 
-// ==============================================
+// ====================== menu mouse over========================
 
 const myLink = document.getElementById("my-link");
 const memuMobile = document.getElementById("menu-mobile");
@@ -71,7 +80,7 @@ memuMobile.addEventListener("mouseover", function(){
     }
 })
 
-// =======================================================
+// ===========================video btn============================
 
 function videoBtn(){
     const playBtn = document.querySelector('.video-btn');
@@ -93,7 +102,7 @@ function videoBtn(){
 
 
 // =======================================================
-const modalBody = document.querySelector(".modal-box-body");
+/*const modalBody = document.querySelector(".modal-box-body");
 const modalBtn= document.querySelector("#modal-btn");
 const markCencel = document.querySelector("#mark-cencel");
 const modalBox = document.querySelector("#modal-box");
@@ -105,9 +114,9 @@ modalBtn.addEventListener('click', () => {
 markCencel.addEventListener("click", () => {
     modalBody.style.display = "none";
     modalBox.style.backgroundColor = '#fff'
-});
-
-const modalDltBox = document.querySelector('.modal-box-dlt');
+});*/
+// =====================================
+/*const modalDltBox = document.querySelector('.modal-box-dlt');
 const markDltCencel = document.querySelector('#mark-cencel-dlt');
 const markDltBtn = document.querySelector('#modal-dlt');
 
@@ -147,7 +156,7 @@ toastBtn.addEventListener('click', () => {
 });
 toastClose.addEventListener('click', () => {
     toastContent.classList.remove('toast-on');
-});
+});*/
 //=========================alert box=============================
 
 const close = document.getElementsByClassName("closebtn");
@@ -234,6 +243,7 @@ const setText = () =>{
     
 };
 
+
 // ==========================media quary===============================
 /*function changBackgroundColor(a) {
     if (a.matches) { 
@@ -272,22 +282,3 @@ const setText = () =>{
 
 
 
-// const progressBtn = document.querySelector('#progress-btn');
-    // progressBtn.addEventListener('click', () => {
-    //     progressBar.style.display = 'block';
-    // })
-
-
-
-
-
-
-
-
-
-
-// window.onclick = function(event) {
-//     if (event.target == modalBody) {
-//       modalBody.style.display = "none";
-//     }
-//   }
