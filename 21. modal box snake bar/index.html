@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accordion (inspired by W3school.com)">
+    <meta name="keywords" content="Custom design Css only">
+    <meta name="author" content="sumit sarkar">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon section  -->
+    <link rel="shortcut icon" href="https://workmatejob.com/images/avatars/avatar_901168716077495851.jpg" type="image/x-icon">
+    <!-- this is Css section  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- this is google font section  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+
+    <title>Modal box & snake bar </title>
+</head>
+<body>
+
+     <section id="modal-box">
+        <h3>modal box</h3>
+            <button type="button" id="modal-btn" class="modal-btn" title="click here">open modal</button>
+            <button type="button" id="modal-dlt " class="modal-btn" title="Delete Button" onclick="deleteBtn()">delete</button>
+            <button type="button" id="toast-btn " class="modal-btn" title="toast-btn">show snackbar</button>
+        <div class="modal-box-body">
+            <div class="modal-content">
+                <span id="mark-cencel"><i class="fa-solid fa-xmark"></i></span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ut consequuntur eligendi, quis ducimus quam voluptatem corrupti, sapiente debitis fugit voluptatibus minima illo! Commodi, veniam.</p>
+            </div>
+        </div>
+
+        <div class="modal-box-dlt">
+            <span id="mark-cencel-dlt"><i class="fa-solid fa-xmark"></i></span>
+            <div class="modal-dlt-content">
+                <h3>Delete Account</h3>
+                <p>Are you sure you want to delete your account?</p>
+                <div class="btn-group">
+                    <button type="reset" id="reset-btn">cencel</button>
+                    <button type="submit" id="sub-btn">delete</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="snackbar">
+            <div class="toast-content">
+                <i class="fa-solid fa-check" id="toast-check"></i>
+                <div class="toast-box">
+                    <span class="toast-title">Success!</span>
+                    <span class="toast-text">Your change has been saved.</span>
+                </div>
+                <i class="fa-solid fa-xmark" id="toast-cencel"></i>
+            </div>
+        </div>
+
+        <div class="hover-over" style="border: 1px solid rgb(204, 162, 162)">
+            <div class="myDIV">Hover over me.</div>
+        <div class="hide">I am shown when someone hovers over the div above.</div>
+        </div>
+
+        <div class="alert-box">
+            <div class="alert">
+                <span class="closebtn">&times;</span>  
+                <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+              </div>
+              
+              <div class="alert success">
+                <span class="closebtn">&times;</span>  
+                <strong>Success!</strong> Indicates a successful or positive action.
+              </div>
+        </div>
+    </section>  
+
+    <script>
+const modalBody = document.querySelector(".modal-box-body");
+const modalBtn= document.querySelector("#modal-btn");
+const markCencel = document.querySelector("#mark-cencel");
+const modalBox = document.querySelector("#modal-box");
+
+modalBtn.addEventListener('click', () => {
+    modalBody.style.display = "block";
+    modalBox.style.backgroundColor = '#ffffff91'
+});
+markCencel.addEventListener("click", () => {
+    modalBody.style.display = "none";
+    modalBox.style.backgroundColor = '#fff'
+});
+// =====================================
+const modalDltBox = document.querySelector('.modal-box-dlt');
+const markDltCencel = document.querySelector('#mark-cencel-dlt');
+const markDltBtn = document.querySelector('#modal-dlt');
+
+const modalResetBtn = document.querySelector("#reset-btn");
+const modalSubBtn = document.querySelector("#sub-btn");
+
+markDltBtn.addEventListener('click', () => {
+    modalDltBox.style.display = "block";
+    modalBox.style.backgroundColor = '#ffffff91'
+});
+markDltCencel.addEventListener('click', () => {
+    modalDltBox.style.display = "none";
+    modalBox.style.backgroundColor = '#ffffff'
+});
+
+
+modalResetBtn.addEventListener('click', () => {
+    modalDltBox.style.display = "none";
+    modalBox.style.backgroundColor = '#ffffff'
+});
+
+modalSubBtn.addEventListener('click', () => {
+    alert('Account Delete');
+    modalDltBox.style.display = "none";
+    modalBox.style.backgroundColor = '#ffffff'
+});
+
+const toastBtn = document.querySelector('#toast-btn');
+const toastContent = document.querySelector('.toast-content');
+const toastClose = document.querySelector('#toast-cencel');
+
+toastBtn.addEventListener('click', () => {
+    toastContent.classList.add('toast-on');
+    setTimeout(() => {
+        toastContent.classList.remove('toast-on')
+    }, 2600);
+});
+toastClose.addEventListener('click', () => {
+    toastContent.classList.remove('toast-on');
+});
+    </script>
+    
+</body>
+</html>

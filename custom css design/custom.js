@@ -1,3 +1,10 @@
+// ==========================parallax===============================
+
+const parllax = document.querySelector('#parallax');
+window.addEventListener('scroll', () => {
+
+    parllax.style.baacgroundPositionY = `${scrollY / 1.5}px`;
+});
 const h1 = document.querySelector('body h1');
 
 h1.addEventListener('mouseover', () => {
@@ -26,13 +33,13 @@ h1.addEventListener('mouseover', () => {
  });
 
 // ==================================
-/*window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-      document.body.style.backgroundColor = "#8cdde7ec"; // Change background after scrolling 100px
-    } else {
-      document.body.style.backgroundColor = ""; // Revert when scrolling back up
-    }
-  });*/
+// window.addEventListener("scroll", () => {
+//     if (window.scrollY > 100) {
+//       document.body.style.backgroundColor = "#8cdde7ec"; // Change background after scrolling 100px
+//     } else {
+//       document.body.style.backgroundColor = ""; // Revert when scrolling back up
+//     }
+//   });
 
 //==================================
 function menu(x){
@@ -102,61 +109,7 @@ function videoBtn(){
 
 
 // =======================================================
-/*const modalBody = document.querySelector(".modal-box-body");
-const modalBtn= document.querySelector("#modal-btn");
-const markCencel = document.querySelector("#mark-cencel");
-const modalBox = document.querySelector("#modal-box");
-
-modalBtn.addEventListener('click', () => {
-    modalBody.style.display = "block";
-    modalBox.style.backgroundColor = '#ffffff91'
-});
-markCencel.addEventListener("click", () => {
-    modalBody.style.display = "none";
-    modalBox.style.backgroundColor = '#fff'
-});*/
-// =====================================
-/*const modalDltBox = document.querySelector('.modal-box-dlt');
-const markDltCencel = document.querySelector('#mark-cencel-dlt');
-const markDltBtn = document.querySelector('#modal-dlt');
-
-const modalResetBtn = document.querySelector("#reset-btn");
-const modalSubBtn = document.querySelector("#sub-btn");
-
-markDltBtn.addEventListener('click', () => {
-    modalDltBox.style.display = "block";
-    modalBox.style.backgroundColor = '#ffffff91'
-});
-markDltCencel.addEventListener('click', () => {
-    modalDltBox.style.display = "none";
-    modalBox.style.backgroundColor = '#ffffff'
-});
-
-
-modalResetBtn.addEventListener('click', () => {
-    modalDltBox.style.display = "none";
-    modalBox.style.backgroundColor = '#ffffff'
-});
-
-modalSubBtn.addEventListener('click', () => {
-    alert('Account Delete');
-    modalDltBox.style.display = "none";
-    modalBox.style.backgroundColor = '#ffffff'
-});
-
-const toastBtn = document.querySelector('#toast-btn');
-const toastContent = document.querySelector('.toast-content');
-const toastClose = document.querySelector('#toast-cencel');
-
-toastBtn.addEventListener('click', () => {
-    toastContent.classList.add('toast-on');
-    setTimeout(() => {
-        toastContent.classList.remove('toast-on')
-    }, 2600);
-});
-toastClose.addEventListener('click', () => {
-    toastContent.classList.remove('toast-on');
-});*/
+/**/
 //=========================alert box=============================
 
 const close = document.getElementsByClassName("closebtn");
@@ -261,6 +214,20 @@ const setText = () =>{
     changBackgroundColor(a)
   });*/
 
+
+//   ==========================================================
+
+const parallaxMouseover = document.querySelector('#parallax-mouseover');
+parallaxMouseover.addEventListener("mouseover", e => {
+    let x = e.clientX;
+    let y = e.clientY;
+
+    let parallaxText = document.querySelector(".parallax-text");
+
+    parallaxText.style.transform = `translate(-${x * 0.05}px, -${y * 0.05}px)`;
+    parallaxMouseover.style.baacgroundPositionX = `-${x * 0.09}px`;
+    parallaxMouseover.style.baacgroundPositionY = `-${y * 0.09}px`;
+})
  
 
 

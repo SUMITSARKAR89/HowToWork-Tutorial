@@ -11,7 +11,8 @@ body{
     width: 100%;
     max-width: 90%;
     margin:  0 auto;
-    height: auto;  
+    height: auto; 
+    bottom: 0; 
     background-color: #000;
     /* overflow-y: hidden;
     overflow-x: hidden; */
@@ -20,6 +21,7 @@ body h1{
     text-align: center;
     padding: 10px 25px;
     margin: 2% auto;
+    max-width: 100%;
     background-color: #fff;
     border: 1px solid #00000056;
     text-transform: capitalize;
@@ -35,13 +37,51 @@ body h1{
 section{
     margin: 5% 2%;
     border: 1px solid #000;
+    width: 100%;
 }
 h2{
     background-color: black;
     color: #fff;
     padding: 5px;
 }
+/* ----------------parallax start here------------------  */
+section#parallax{
+    width: 100%;
+    height: 105vh;
+    background: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/green-natural-background-with-trees-and-wooden-foundation-free-image.jpeg?w=600&quality=80) no-repeat top / 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15%;
+}
 
+#parallax .parallax-title{
+    background-color: transparent;
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    
+}
+#parallax::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to bottom, transparent, #000 50%);
+    width: 100%;
+    height: 200px;
+    bottom: -100px;
+}
+#parallax::before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to top, transparent, #000000b7 90%);
+    width: 100%;
+    height: 200px;
+    top: -50px;
+
+}
 /* ----------------Horizontal start here------------------  */
 #horizontal{
     background-color: rgba(77, 226, 176, 0.808);
@@ -796,7 +836,7 @@ position: absolute;
 /* --------------video background ends here------------------  */
 /* --------------video modal box starts here------------------  */
 
-#modal-box{
+/* #modal-box{
     background-color: rgb(247, 245, 245);
     margin-top: 10%;
     max-width: 100%;
@@ -971,9 +1011,9 @@ position: absolute;
 .btn-group #sub-btn:hover{
     background-color: #dd2619;
 
-}
+} */
 
-.slider-range{
+/* .slider-range{
     max-width: 80%;
     
 }
@@ -1081,7 +1121,7 @@ position: absolute;
     font-weight: 500;
     color: #000;
   }
-  
+   */
 
 
 /* --------------video modal box ends here------------------  */
@@ -1311,6 +1351,7 @@ position: absolute;
 }
 .fullscreen img{
     max-width: 100%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 
@@ -1334,7 +1375,8 @@ position: absolute;
 }
 /* --------------blend mode end here------------------  */
 ::-webkit-scrollbar {
-    width: 8px;    
+    width: 8px; 
+    bottom: 0;   
   }
   
   /* Track */
@@ -1394,8 +1436,8 @@ position: absolute;
 
   /* ================================================ */
    .cursor{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -1403,8 +1445,33 @@ position: absolute;
    }
    .outer{
     border: 1px solid #e2dee4;
-    background-color: #ac1ee4c5;
+    background-color: #8a35ac52;
    }
 
+   /* ========================================================= */
+   #parallax-mouseover{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://thumbs.dreamstime.com/b/landscape-nature-view-background-view-window-landscape-nature-view-background-view-window-wonderful-landscape-121459679.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    position: relative;
+
+    text-align: center;
+   }
+   .parallax-text{
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: #fff;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.55);
+    text-transform: capitalize;
+    text-align: center;
+    
+   }
    
 
