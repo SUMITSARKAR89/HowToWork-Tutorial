@@ -824,5 +824,177 @@ function searchOn() {
 
 ```
 
+## 17.email
+
+<img src="100.image/email.png" alt="" >
+
+
+```html
+
+ <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7babca68-faee-4353-abb0-596ef90e2ffd">
+            
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+           
+
+        </form>
+```
+
+## 18.cursor
+
+<img src="100.image/cursor.png" alt="" >
+
+
+```html
+
+    <div class="cursor outer"></div>
+    <div class="cursor inner"></div>
+```
+
+```javascript
+
+    // ==========================cursor===============================
+            const cursorPointer = document.querySelector(".cursor");
+
+            window.addEventListener('mousemove', (e) => {
+
+                let x = e.pageX;
+                let y = e.pageY;
+
+                cursorPointer.style.left = `${x}px`;
+                cursorPointer.style.top = `${y}px`;
+
+
+            });
+```
+
+## 19.Text Typewriter
+
+<img src="100.image/text-type.png" alt="" >
+
+
+```html
+
+   <p id="type-write" data-text=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quisquam quia possimus sint velit veniam quo nostrum suscipit nemo dolores blanditiis voluptates fugit sed, repellendus neque, aspernatur nobis. Fuga a vero, et earum sint sed. Similique esse commodi amet laboriosam quasi, asperiores saepe maxime ducimus, hic doloremque cupiditate autem voluptate.">
+</p>
+
+```
+
+```javascript
+// ========================type writes=============
+
+                const textWrite = document.querySelector("#type-write");
+                const dataText = textWrite.getAttribute('data-text');
+                let count = 0;
+
+                window.onload = () =>{
+                    setText();
+                };
+
+                const setText = () =>{
+                    setTimeout ( () => {
+                        textWrite.textContent += dataText.charAt(count);
+                        count ++;
+                        if(count <= dataText.length){
+                            setText();
+                        }
+
+                    },50);
+                    
+                };
+```
+
+## 20.drop down
+
+<img src="100.image/dropdown.png" alt="" >
+
+
+```html
+
+ <ul id="nested-dropdown">
+                <li><span class="tree">semister summary</span>
+                  <ul class="nested">
+
+                    <li><span class="tree">day</span>
+                      <ul class="nested">
+                        <li class="nested-list">saturday</li>
+                        <li class="nested-list">sunday</li>
+                        <li class="nested-list">monday</li>
+                        <li class="nested-list">thuesday</li>
+                        <li class="nested-list">wednessday</li>
+                        <li class="nested-list">thursday</li>
+                        <li class="nested-list">friday</li>
+
+                      </ul>
+                    </li> 
+
+                    <li><span class="tree">month</span>
+                        <ul class="nested">
+                          <li><span class="tree">1st semister</span>
+                            <ul class="nested">
+                              <li class="nested-list">january</li>
+                              <li class="nested-list">february</li>
+                              <li ><span class="tree">March</span>
+                                <ul class="nested">
+                                    <li class="nested-list">1 day</li>
+                                    <li class="nested-list">7 days</li>
+                                    <li class="nested-list">15 days</li>
+                                    <li class="nested-list">30 days</li>
+                                </ul>
+                            
+                            </li>
+                              <li class="nested-list">april</li>
+                            </ul>
+                          </li>
+                          <li><span class="tree">2nd semister</span>
+                            <ul class="nested">
+                                <li class="nested-list">may</li>
+                                <li class="nested-list">june</li>
+                                <li class="nested-list">july</li>
+                                <li class="nested-list">august</li>
+                            </ul>
+                          </li>
+                          <li><span class="tree">3rd semister</span>
+                            <ul class="nested">
+                                <li class="nested-list">september</li>
+                                <li class="nested-list">october</li>
+                                <li class="nested-list">november</li>
+                                <li class="nested-list">december</li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </li> 
+
+                    <li><span class="tree">year</span>
+                        <ul class="nested">
+                            <li class="nested-list">2020</li>
+                            <li class="nested-list">2021</li>
+                            <li class="nested-list">2022</li>
+                            <li class="nested-list">2023</li>
+                            <li class="nested-list">2024</li>
+                            <li class="nested-list">2025</li>
+                           
+                          </ul>
+                    </li> 
+
+                  </ul>
+                </li>
+    </ul>
+```
+
+```javascript
+
+            const toggler = document.getElementsByClassName("tree");
+
+                var i;
+                for (i = 0; i < toggler.length; i++) {
+                toggler[i].addEventListener("click", function() {
+                    this.parentElement.querySelector(".nested").classList.toggle("active-t");
+                    this.classList.toggle("tree-down");
+                });
+                };
+
+```
+
 
   
